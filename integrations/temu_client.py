@@ -1,176 +1,151 @@
 import asyncio
 import aiohttp
 import json
-import re
 from typing import List, Dict, Optional, Any
 from loguru import logger
 import os
-from bs4 import BeautifulSoup
 import time
-import random
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Configure Loguru
+log_file_path = os.path.join(os.path.dirname(__file__), '..', 'logs', 'temu_client.log')
+logger.add(log_file_path, rotation="10 MB", retention="7 days", level="INFO")
 
 class TemuClient:
     """
-    Cliente para interactuar con Temu API o web scraping
+    Cliente para interactuar con Temu, utilizando Apify para el scraping.
     """
-    
+    ACTOR_ID = "amit123~temu-products-scraper"
+    BASE_URL = "https://api.apify.com/v2"
+
     def __init__(self):
-        self.api_key = os.getenv("TEMU_API_KEY", "scraping_mode")
-        self.api_url = os.getenv("TEMU_API_URL", "https://api.temu.com")
-        self.partner_id = os.getenv("TEMU_PARTNER_ID")
-        self.secret_key = os.getenv("TEMU_SECRET_KEY")
+        """
+        Inicializa el cliente, cargando el token de Apify.
+        """
+        self.apify_token = os.getenv("APIFY_API_TOKEN")
+        self.timeout = 180  # 3-minute timeout for the entire process
+        self.mode = "none"
         
-        # Headers para web scraping
-        self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1',
+        if self.apify_token:
+            self.mode = "scraping"
+            logger.info("TemuClient initialized in Scraping mode using Apify.")
+        else:
+            logger.warning("TemuClient is unavailable. No APIFY_API_TOKEN provided.")
+
+    async def get_products(self, search_term: str, limit: int = 20) -> Optional[List[Dict[str, Any]]]:
+        """
+        Obtiene una lista de productos de Temu utilizando el Actor de Apify.
+        """
+        if self.mode != 'scraping':
+            logger.error("TemuClient is not configured for scraping. Cannot get products.")
+            return None
+
+        start_run_url = f"{self.BASE_URL}/acts/{self.ACTOR_ID}/runs?token={self.apify_token}"
+        run_input = {
+            "searchQueries": [search_term],
+            "maxItems": limit,
+            "language": "en-US",
+            "country": "US",
+            "currency": "USD"
         }
-        
-        self.is_api_mode = self.api_key != "scraping_mode"
-        logger.info(f"TemuClient initialized in {'API' if self.is_api_mode else 'Scraping'} mode")
-    
-    async def get_products(self, category: Optional[str] = None, limit: int = 20) -> List[Dict[str, Any]]:
-        """
-        Obtener productos de Temu
-        """
-        try:
-            if self.is_api_mode:
-                return await self._get_products_api(category, limit)
-            else:
-                return await self._get_products_scraping(category, limit)
-        except Exception as e:
-            logger.error(f"Error getting products: {str(e)}")
-            return []
-    
-    async def _get_products_api(self, category: Optional[str], limit: int) -> List[Dict[str, Any]]:
-        """
-        Obtener productos usando API oficial
-        """
+
+        logger.info(f"Starting Apify Actor '{self.ACTOR_ID}' for search term: '{search_term}'")
         try:
             async with aiohttp.ClientSession() as session:
-                url = f"{self.api_url}/products"
-                params = {
-                    'category': category,
-                    'limit': limit,
-                    'partner_id': self.partner_id
-                }
-                headers = {
-                    'Authorization': f'Bearer {self.api_key}',
-                    'Content-Type': 'application/json'
-                }
-                
-                async with session.get(url, params=params, headers=headers) as response:
-                    if response.status == 200:
-                        data = await response.json()
-                        return self._format_products_api(data)
-                    else:
-                        logger.error(f"API request failed: {response.status}")
-                        return []
+                # Step 1: Start the Actor run
+                async with session.post(start_run_url, json=run_input) as response:
+                    if response.status != 201:
+                        body = await response.text()
+                        logger.error(f"Failed to start Apify Actor. Status: {response.status}, Body: {body}")
+                        return None
+                    run_data = await response.json()
+                    run_id = run_data.get('data', {}).get('id')
+                    dataset_id = run_data.get('data', {}).get('defaultDatasetId')
+
+                    if not run_id or not dataset_id:
+                        logger.error(f"Could not get run ID or dataset ID from Apify response: {run_data}")
+                        return None
+
+                logger.info(f"Actor run started with ID: {run_id}. Polling for completion...")
+
+                # Step 2: Poll for the run to finish
+                run_status_url = f"{self.BASE_URL}/acts/{self.ACTOR_ID}/runs/{run_id}?token={self.apify_token}"
+                start_time = time.time()
+                while time.time() - start_time < self.timeout:
+                    async with session.get(run_status_url) as response:
+                        if response.status != 200:
+                            logger.warning(f"Polling failed with status: {response.status}. Retrying...")
+                            await asyncio.sleep(10) # Wait 10 seconds before retrying
+                            continue
+                        
+                        status_data = await response.json()
+                        status = status_data.get('data', {}).get('status')
+
+                        if status == 'SUCCEEDED':
+                            logger.info("Actor run succeeded.")
+                            break
+                        elif status in ['FAILED', 'ABORTED', 'TIMED_OUT']:
+                            logger.error(f"Actor run finished with status: {status}")
+                            return None
+                        
+                        logger.info(f"Run status is '{status}'. Waiting...")
+                        await asyncio.sleep(10) # Wait 10 seconds before polling again
+                else: # Loop finished due to timeout
+                    logger.error(f"Polling timed out after {self.timeout} seconds.")
+                    return None
+
+                # Step 3: Retrieve results from the dataset
+                logger.info(f"Retrieving results from dataset ID: {dataset_id}")
+                dataset_items_url = f"{self.BASE_URL}/datasets/{dataset_id}/items?token={self.apify_token}"
+                async with session.get(dataset_items_url) as response:
+                    if response.status != 200:
+                        body = await response.text()
+                        logger.error(f"Failed to retrieve dataset items. Status: {response.status}, Body: {body}")
+                        return None
+                    
+                    items = await response.json()
+                    logger.info(f"Successfully retrieved {len(items)} products from Apify.")
+                    return self._parse_apify_results(items)
+
+        except asyncio.TimeoutError:
+            logger.error(f"A step timed out after {self.timeout} seconds.")
+            return None
         except Exception as e:
-            logger.error(f"API error: {str(e)}")
-            return []
-    
-    async def _get_products_scraping(self, category: Optional[str], limit: int) -> List[Dict[str, Any]]:
+            logger.exception(f"An unexpected error occurred during Apify integration: {e}")
+            return None
+
+    def _parse_apify_results(self, items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """
-        Obtener productos usando web scraping
-        """
-        try:
-            # Simular búsqueda en Temu
-            search_terms = self._get_search_terms(category)
-            products = []
-            
-            for term in search_terms[:limit//5]:  # 5 productos por término
-                term_products = await self._scrape_products_by_term(term)
-                products.extend(term_products)
-            
-            # Limitar resultados
-            return products[:limit]
-            
-        except Exception as e:
-            logger.error(f"Scraping error: {str(e)}")
-            return []
-    
-    async def _scrape_products_by_term(self, search_term: str) -> List[Dict[str, Any]]:
-        """
-        Scrape productos por término de búsqueda
-        """
-        try:
-            # Simular productos de Temu (en producción, harías scraping real)
-            products = []
-            
-            # Generar productos simulados
-            for i in range(5):
-                product = {
-                    'id': f'temu_{search_term}_{i}',
-                    'name': f'{search_term.title()} Product {i+1}',
-                    'price': round(random.uniform(5.0, 50.0), 2),
-                    'original_price': round(random.uniform(10.0, 100.0), 2),
-                    'image_url': f'https://via.placeholder.com/300x300?text={search_term}+{i+1}',
-                    'category': search_term,
-                    'rating': round(random.uniform(3.5, 5.0), 1),
-                    'reviews_count': random.randint(10, 1000),
-                    'shipping': 'Free Shipping',
-                    'discount': random.randint(10, 70),
-                    'temu_url': f'https://temu.com/product/{search_term}_{i}'
-                }
-                products.append(product)
-            
-            # Simular delay para evitar rate limiting
-            await asyncio.sleep(random.uniform(0.5, 1.5))
-            
-            return products
-            
-        except Exception as e:
-            logger.error(f"Error scraping products for term {search_term}: {str(e)}")
-            return []
-    
-    def _get_search_terms(self, category: Optional[str]) -> List[str]:
-        """
-        Obtener términos de búsqueda basados en categoría
-        """
-        if category:
-            return [category]
-        
-        # Términos populares en Temu
-        popular_terms = [
-            'phone case', 'earrings', 'dress', 'shoes', 'bag',
-            'watch', 'sunglasses', 'necklace', 'bracelet', 'ring',
-            'makeup', 'skincare', 'hair accessories', 'home decor',
-            'kitchen', 'garden', 'pet supplies', 'toys', 'electronics'
-        ]
-        
-        return random.sample(popular_terms, min(5, len(popular_terms)))
-    
-    def _format_products_api(self, data: Dict[str, Any]) -> List[Dict[str, Any]]:
-        """
-        Formatear productos de API oficial
+        Parsea los resultados JSON del Actor de Apify a nuestro formato de producto estándar.
         """
         products = []
-        for item in data.get('products', []):
-            product = {
-                'id': item.get('id'),
-                'name': item.get('name'),
-                'price': item.get('price'),
-                'original_price': item.get('original_price'),
-                'image_url': item.get('image_url'),
-                'category': item.get('category'),
-                'rating': item.get('rating'),
-                'reviews_count': item.get('reviews_count'),
-                'shipping': item.get('shipping'),
-                'discount': item.get('discount'),
-                'temu_url': item.get('url')
-            }
-            products.append(product)
+        for item in items:
+            try:
+                # Extraer el precio numérico del string, ej: "$14.72"
+                price_str = item.get('price_info', {}).get('price_str', '0').replace('$', '').replace(',', '')
+                price = float(price_str)
+
+                product = {
+                    'name': item.get('title'),
+                    'price': price,
+                    'image_url': item.get('thumb_url'),
+                    'product_url': item.get('link_url'),
+                    'rating': item.get('comment', {}).get('goods_score'),
+                    'sales_count': item.get('sales_num')
+                }
+                products.append(product)
+            except (ValueError, TypeError) as e:
+                logger.warning(f"Could not parse product item due to invalid data: {item}. Error: {e}")
+            except Exception as e:
+                logger.exception(f"An unexpected error occurred while parsing an Apify item: {e}")
         
         return products
-    
+
     async def get_categories(self) -> List[Dict[str, str]]:
         """
-        Obtener categorías disponibles
+        Obtiene categorías disponibles
         """
         categories = [
             {'id': 'fashion', 'name': 'Fashion', 'description': 'Clothing, accessories, shoes'},
@@ -288,24 +263,26 @@ class TemuClient:
             logger.error(f"Error getting product details: {str(e)}")
             return None
     
-    def get_mode(self) -> str:
-        """
-        Obtener el modo actual del cliente
-        """
-        return "API" if self.is_api_mode else "Scraping"
+
     
     async def test_connection(self) -> bool:
         """
         Probar conexión con Temu
         """
         try:
-            if self.is_api_mode:
+            if self.mode == 'API':
                 # Probar API
+                logger.info("Testing API connection...")
                 categories = await self.get_categories()
                 return len(categories) > 0
-            else:
-                # Probar scraping - siempre funciona en modo simulación
-                return True
+            elif self.mode == 'Scraping':
+                # Probar scraping con Oxylabs
+                logger.info("Testing scraping connection with Oxylabs...")
+                test_products = await self._scrape_products_by_term("t-shirt")
+                return len(test_products) > 0
+            else: # self.mode == 'Unavailable'
+                logger.warning("Connection test skipped: client is unavailable.")
+                return False
         except Exception as e:
             logger.error(f"Connection test failed: {str(e)}")
             return False 
