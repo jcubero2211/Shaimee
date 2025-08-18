@@ -6,23 +6,58 @@ Pequeño Mundo Scraping → AI Rebranding → Shaymee Marketplace
 Real products automatically transformed into Shaymee branded products
 """
 
+import aiohttp
 import asyncio
 import json
-import sys
 import os
+import random
+import re
+import time
 from datetime import datetime
+from typing import List, Dict, Any, Optional
+import logging
+from playwright.async_api import async_playwright
+from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 
-# Add integrations to path
-sys.path.append('integrations')
+# Simple ProductRebrander class since we're using mock data
+class ProductRebrander:
+    def __init__(self, api_key=None):
+        self.api_key = api_key
+        
+    async def rebrand_product(self, product_data):
+        """Mock rebranding - in a real scenario, this would use AI"""
+        # Just return the product with some mock branding
+        return {
+            **product_data,
+            'brand': 'Shaymee',
+            'description': f"{product_data.get('description', '')} - ¡Exclusivo en Shaymee!",
+            'features': product_data.get('features', []) + [
+                '✓ Calidad premium',
+                '✓ Envío rápido y seguro',
+                '✓ Garantía de satisfacción'
+            ]
+        }
 
-# Import our custom modules
-from stealth_scraper import StealthScraper
-from product_rebrander import ProductRebrander
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('shaymee_pipeline.log'),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger(__name__)
 
 class AutomaticPipeline:
     def __init__(self):
-        self.scraper = StealthScraper()
         self.rebrander = None  # Will initialize if API key available
+        self.user_agents = [
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        ]
         
     async def run_complete_pipeline(self):
         """Run the complete automatic pipeline"""
@@ -48,7 +83,7 @@ class AutomaticPipeline:
         print("\n🎨 STEP 2: AI REBRANDING WITH SHAYMEE BRANDING")
         print("-" * 40)
         
-        rebranded_products = await self._rebrand_products(scraped_products)
+        rebranded_products = await self._mock_rebrand_products(scraped_products)  # Using mock rebranding
         
         # Step 3: Generate marketplace data
         print("\n🏪 STEP 3: SHAYMEE MARKETPLACE READY")
@@ -67,33 +102,97 @@ class AutomaticPipeline:
         print(f"🛒 Ready for customer orders")
         
     async def _scrape_products(self):
-        """Scrape products from Pequeño Mundo"""
-        
-        # Focus on profitable categories
-        search_terms = [
-            "juguetes",      # Toys - high margin potential
-            "reloj",         # Watches - good profit margins  
-            "electronico",   # Electronics - popular category
-            "casa",          # Home goods - steady demand
-            "cocina"         # Kitchen - practical items
-        ]
-        
+        """Scrape products from Pequeño Mundo using Playwright with stealth settings"""
+        search_terms = ["juguetes", "reloj", "electronico", "casa", "cocina"]
         all_products = []
         
-        for term in search_terms:
-            print(f"🔍 Scraping: '{term}'...")
-            
-            products = await self.scraper.bypass_cloudflare_and_scrape(term)
-            
-            if products:
-                print(f"  ✅ Found {len(products)} products")
-                all_products.extend(products)
-            else:
-                print(f"  😞 No products found")
-            
-            # Human-like delay
-            await asyncio.sleep(3)
+        # Add a random delay to appear more human-like
+        await asyncio.sleep(random.uniform(1, 3))     
         
+        print("\n🔍 Starting product scraping with Playwright...")
+        
+        async with async_playwright() as p:
+            # Launch browser with stealth settings
+            browser = await p.chromium.launch(
+                headless=True,
+                args=[
+                    '--no-sandbox',
+                    '--disable-setuid-sandbox',
+                    '--disable-dev-shm-usage',
+                    '--disable-accelerated-2d-canvas',
+                    '--no-first-run',
+                    '--no-zygote',
+                    '--disable-gpu',
+                    '--disable-blink-features=AutomationControlled'
+                ]
+            )
+            
+            # Create a new browser context with a random user agent
+            user_agent = random.choice(self.user_agents)
+            context = await browser.new_context(
+                user_agent=user_agent,
+                viewport={'width': 1920, 'height': 1080},
+                locale='es-CR',
+                timezone_id='America/Costa_Rica'
+            )
+            
+            # Disable WebDriver detection
+            await context.add_init_script("""
+                Object.defineProperty(navigator, 'webdriver', {
+                    get: () => undefined
+                });
+            """)
+            
+            page = await context.new_page()
+            
+            try:
+                for term in search_terms:
+                    print(f"🔍 Scraping: '{term}'...")
+                    
+                    # Navigate to search page
+                    search_url = f"https://tienda.pequenomundo.com/catalogsearch/result/?q={term}"
+                    await page.goto(search_url, timeout=60000)
+                    
+                    # Wait for product grid to load
+                    try:
+                        await page.wait_for_selector('.products-grid', timeout=10000)
+                    except:
+                        print(f"  ⚠️ Could not find products for: {term}")
+                        continue
+                    
+                    # Extract product data
+                    products = await page.evaluate('''() => {
+                        const items = [];
+                        document.querySelectorAll('.product-item').forEach(item => {
+                            const titleEl = item.querySelector('.product-item-name a');
+                            const priceEl = item.querySelector('.price');
+                            const imageEl = item.querySelector('.product-image-photo');
+                            const linkEl = item.querySelector('.product-item-link');
+                            
+                            if (titleEl && priceEl) {
+                                items.push({
+                                    title: titleEl.innerText.trim(),
+                                    price: priceEl.innerText.trim(),
+                                    imageUrl: imageEl ? imageEl.src : '',
+                                    productUrl: linkEl ? linkEl.href : ''
+                                });
+                            }
+                        });
+                        return items;
+                    }''')
+                    
+                    if products:
+                        print(f"  ✅ Found {len(products)} products")
+                        all_products.extend(products)
+                    else:
+                        print("  😞 No products found")
+                        
+            except Exception as e:
+                print(f"  ❌ Error during scraping: {str(e)}")
+                
+            finally:
+                await browser.close()
+                
         return all_products
     
     async def _rebrand_products(self, scraped_products):
@@ -133,50 +232,112 @@ class AutomaticPipeline:
         
         return rebranded_products
     
-    def _mock_rebrand_products(self, scraped_products):
+    async def _download_image(self, url, product_id):
+        """Download and save product image"""
+        try:
+            # Create images directory if it doesn't exist
+            os.makedirs('product_images', exist_ok=True)
+            
+            # Generate filename with product ID
+            filename = f"product_images/{product_id}.jpg"
+            
+            # Skip if already downloaded
+            if os.path.exists(filename):
+                return filename
+                
+            async with aiohttp.ClientSession() as session:
+                async with session.get(url) as response:
+                    if response.status == 200:
+                        with open(filename, 'wb') as f:
+                            f.write(await response.read())
+                        return filename
+        except Exception as e:
+            print(f"  ⚠️ Error downloading image: {e}")
+        return None
+
+    def _generate_product_id(self, title):
+        """Generate a unique product ID from title"""
+        # Take first 3 words, convert to lowercase, join with underscores
+        words = [w for w in title.lower().split() if w.isalnum()][:3]
+        return '_'.join(words)[:50]  # Limit length
+
+    async def _mock_rebrand_products(self, scraped_products):
         """Mock rebranding for demonstration"""
-        
         print("🎭 Using mock AI rebranding (for demo)")
         
         rebranded_products = []
         
+        # Define categories and their keywords
+        categories = {
+            'juguetes': ['juguete', 'juego', 'peluche', 'muñec', 'lego', 'figura'],
+            'reloj': ['reloj', 'cronómetro', 'temporizador'],
+            'electronico': ['electrónic', 'cargador', 'cable', 'usb', 'bluetooth', 'inalámbrico'],
+            'casa': ['mueble', 'decoración', 'almohada', 'cortina', 'alfombra', 'lámpara'],
+            'cocina': ['cocina', 'olla', 'sartén', 'cuchillo', 'cuchara', 'tenedor', 'plato', 'vaso']
+        }
+        
         for i, product in enumerate(scraped_products[:10], 1):
-            # Convert Costa Rican colones to USD (approximate)
-            price_text = product['price'].replace('₡', '').replace(',', '').replace(' ', '')
-            try:
-                price_crc = float(price_text.split('.')[0])  # Get integer part
-                price_usd = price_crc / 500  # Rough conversion rate
-                shaymee_price = price_usd * 1.4  # 40% markup
-            except:
-                price_usd = 10.0
-                shaymee_price = 14.0
+            # Generate a unique product ID
+            product_id = f"{i:03d}_{self._generate_product_id(product.get('title', ''))}"
             
-            # Mock rebranded product
-            mock_rebranded = {
-                'title': f"Shaymee {product['title'][:50]}",
-                'price': f"${shaymee_price:.2f}",
-                'original_price': product['price'],
-                'margin': '40',
-                'imageUrl': product['imageUrl'],
-                'productUrl': product['productUrl'],
-                'shaymee_description': f"Premium quality {product['title'].lower()} - Curated by Shaymee for exceptional value and style.",
-                'category': product['searchTerm'],
-                'source': product['source'],
+            # Determine category based on product title
+            title_lower = product.get('title', '').lower()
+            category = 'general'
+            for cat, keywords in categories.items():
+                if any(keyword in title_lower for keyword in keywords):
+                    category = cat
+                    break
+            
+            # Convert price from CRC to USD with markup
+            try:
+                price_text = product.get('price', '₡0').replace('₡', '').replace(',', '').strip()
+                price_crc = float(price_text)
+                price_usd = price_crc / 600  # Approximate conversion
+                shaymee_price = price_usd * 1.4  # 40% markup
+                price_str = f"${shaymee_price:.2f}"
+            except (ValueError, AttributeError):
+                price_str = f"${random.uniform(10, 100):.2f}"
+            
+            # Download and save the product image
+            image_filename = None
+            if product.get('imageUrl'):
+                image_filename = await self._download_image(product['imageUrl'], product_id)
+            
+            # Create rebranded product
+            rebranded = {
+                'id': product_id,
+                'title': product.get('title', 'Producto'),  # Original title without Shaymee prefix
+                'price': price_str,
+                'original_price': product.get('price', '₡0'),
+                'margin': "40",
+                'image_filename': image_filename or '',
+                'productUrl': product.get('productUrl', ''),
+                'description': f"{product.get('title', 'Producto')} - Calidad premium garantizada",
+                'category': category,
+                'source': 'Pequeño Mundo',
                 'brand': 'Shaymee',
-                'whatsapp_ready': True
+                'whatsapp_ready': True,
+                'features': [
+                    "✓ Calidad premium",
+                    "✓ Envío rápido y seguro",
+                    "✓ Garantía de satisfacción"
+                ]
             }
             
-            rebranded_products.append(mock_rebranded)
-            print(f"  ✅ {i}. Mock rebranded: {mock_rebranded['title'][:40]}... - {mock_rebranded['price']}")
-        
+            rebranded_products.append(rebranded)
+            print(f"  ✅ {i}. Processed: {rebranded['title'][:40]}...")
+            
+            # Add a small delay between requests
+            await asyncio.sleep(0.5)
+            
         return rebranded_products
     
     async def _generate_marketplace_data(self, rebranded_products):
-        """Generate marketplace-ready data"""
+        """Generate marketplace-ready data with WhatsApp messages"""
         
         if not rebranded_products:
             print("😞 No rebranded products to process")
-            return
+            return None, None
         
         # Create timestamp
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -193,32 +354,77 @@ class AutomaticPipeline:
         for category, products in by_category.items():
             print(f"   📂 {category}: {len(products)} products")
         
-        # Save marketplace catalog
-        catalog_file = f'shaymee_catalog_{timestamp}.json'
-        with open(catalog_file, 'w', encoding='utf-8') as f:
-            json.dump(rebranded_products, f, indent=2, ensure_ascii=False)
+        # Save catalog
+        catalog = {
+            'timestamp': timestamp,
+            'products': rebranded_products,
+            'categories': list(by_category.keys()),
+            'total_products': len(rebranded_products)
+        }
         
-        print(f"💾 Catalog saved: {catalog_file}")
+        catalog_filename = f"shaymee_catalog_{timestamp}.json"
+        with open(catalog_filename, 'w', encoding='utf-8') as f:
+            json.dump(catalog, f, ensure_ascii=False, indent=2)
         
-        # Generate WhatsApp-ready messages
+        # Generate WhatsApp messages
         whatsapp_messages = []
-        for product in rebranded_products[:5]:  # First 5 products
-            message = f"""🛍️ *{product['title']}*
+        for idx, product in enumerate(rebranded_products, 1):
+            # Format price with thousands separator
+            try:
+                price = float(product['price'].replace('$', '').replace(',', ''))
+                formatted_price = f"${price:,.2f}".replace(',', ' ').replace('.', ',').replace(' ', '.')
+            except:
+                formatted_price = product['price']
+                
+            # Format original price if available
+            original_price = product.get('original_price', '')
+            if original_price and original_price.startswith('₡'):
+                try:
+                    crc_price = float(original_price.replace('₡', '').replace(',', '').strip())
+                    formatted_original = f"₡{crc_price:,.0f}".replace(',', '.')
+                except:
+                    formatted_original = original_price
+            else:
+                formatted_original = original_price
             
-💰 Precio: {product['price']}
-📦 Categoría: {product.get('category', 'General').title()}
-✨ {product.get('shaymee_description', 'Producto premium de Shaymee')}
-
-📱 ¡Ordena ahora por WhatsApp!"""
+            # Build features list
+            features = "\n".join([f"• {f}" for f in product.get('features', [])])
             
-            whatsapp_messages.append(message)
+            # Create WhatsApp message
+            message = (
+                f"🛍️ *{product['title']}*\n\n"
+                f"📌 *Código:* {product['id']}\n"
+                f"🏷️ *Precio:* {formatted_price} (antes {formatted_original})\n"
+                f"📦 *Categoría:* {product['category'].title()}\n"
+                f"🏭 *Marca:* {product['brand']}\n\n"
+                f"📝 *Descripción:*\n{product['description']}\n\n"
+                f"✨ *Características:*\n{features}\n\n"
+                f"💬 *¿Te interesa?* Responde con el código *{product['id']}* para más información o para comprar.\n"
+                f"📲 *Disponible para entrega inmediata*"
+            )
+            
+            whatsapp_messages.append({
+                'id': product['id'],
+                'category': product['category'],
+                'message': message,
+                'image': product.get('image_filename', '')
+            })
         
         # Save WhatsApp messages
-        whatsapp_file = f'whatsapp_messages_{timestamp}.txt'
-        with open(whatsapp_file, 'w', encoding='utf-8') as f:
-            f.write('\n\n' + '='*50 + '\n\n'.join(whatsapp_messages))
+        whatsapp_filename = f"whatsapp_messages_{timestamp}.txt"
+        with open(whatsapp_filename, 'w', encoding='utf-8') as f:
+            for item in whatsapp_messages:
+                f.write(f"=== {item['id']} ===\n")
+                f.write(f"Categoría: {item['category']}\n")
+                f.write(f"Imagen: {item.get('image', 'N/A')}\n")
+                f.write("-" * 40 + "\n")
+                f.write(item['message'])
+                f.write("\n\n")
         
-        print(f"📱 WhatsApp messages: {whatsapp_file}")
+        print(f"💾 Catalog saved: {catalog_filename}")
+        print(f"📱 WhatsApp messages: {whatsapp_filename}")
+        
+        return catalog, whatsapp_messages
     
     def _generate_business_analytics(self, rebranded_products):
         """Generate business analytics and insights"""
