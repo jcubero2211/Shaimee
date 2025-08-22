@@ -1,0 +1,17 @@
+2025-08-17 15:17:32.459 | INFO     | __main__:test_juguetes_backend:21 - 🧸 Testing juguetes with backend scraping approach...
+2025-08-17 15:17:32.496 | INFO     | __main__:test_juguetes_backend:35 - 🔍 Scraping 'juguetes' from Pequeño Mundo...
+2025-08-17 15:17:32.496 | INFO     | integrations.pequeno_mundo_client_clean_fixed:get_products:23 - Searching Pequeño Mundo for: 'juguetes'
+2025-08-17 15:17:32.496 | INFO     | integrations.pequeno_mundo_client_clean_fixed:get_products:65 - Trying URL: https://tienda.pequenomundo.com/catalogsearch/result/?q=juguetes
+2025-08-17 15:17:32.727 | INFO     | integrations.pequeno_mundo_client_clean_fixed:get_products:75 - Response status: 403
+2025-08-17 15:17:32.728 | WARNING  | integrations.pequeno_mundo_client_clean_fixed:get_products:83 - URL https://tienda.pequenomundo.com/catalogsearch/result/?q=juguetes returned HTTP 403
+2025-08-17 15:17:32.728 | INFO     | integrations.pequeno_mundo_client_clean_fixed:get_products:65 - Trying URL: https://tienda.pequenomundo.com/catalogsearch/result/index/?q=juguetes
+2025-08-17 15:17:32.949 | INFO     | integrations.pequeno_mundo_client_clean_fixed:get_products:75 - Response status: 403
+2025-08-17 15:17:32.950 | WARNING  | integrations.pequeno_mundo_client_clean_fixed:get_products:83 - URL https://tienda.pequenomundo.com/catalogsearch/result/index/?q=juguetes returned HTTP 403
+2025-08-17 15:17:32.951 | ERROR    | integrations.pequeno_mundo_client_clean_fixed:get_products:89 - All URLs failed
+2025-08-17 15:17:32.951 | WARNING  | __main__:test_juguetes_backend:109 - ⚠️  No toys found from scraping, using mock data...
+2025-08-17 15:17:32.951 | INFO     | __main__:test_juguetes_backend:126 - 📦 Processing mock toys...
+2025-08-17 15:17:39.392 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/juguetes/set_de_bloques_construcción_castillo_300pcs.jpg
+2025-08-17 15:17:39.393 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/juguetes/20250817_151739/Castillo_de_Sueños_Constructor.jpg
+2025-08-17 15:17:40.408 | INFO     | __main__:test_juguetes_backend:130 - 🧸 Mock Toy #1: Tormenta Veloz RC
+2025-08-17 15:17:40.409 | INFO     | __main__:test_juguetes_backend:130 - 🧸 Mock Toy #2: Castillo de Sueños Constructor 300
+2025-08-17 15:17:40.409 | SUCCESS  | __main__:test_juguetes_backend:132 - ✅ Backend juguetes test completed!

@@ -1,0 +1,121 @@
+2025-08-17 15:26:48.520 | INFO     | __main__:test_proxy_workflow:55 - 🎯 Starting Complete Juguetes Proxy + Rebranding Workflow
+2025-08-17 15:26:48.520 | INFO     | __main__:test_proxy_workflow:56 - ======================================================================
+2025-08-17 15:26:48.521 | INFO     | integrations.pequeno_mundo_client_proxy:__init__:22 - 🌐 Proxy configured: brd.superproxy.io:33335
+2025-08-17 15:26:48.559 | INFO     | __main__:test_proxy_workflow:70 - 🌐 STEP 1: Attempting to scrape with Bright Data proxy...
+2025-08-17 15:26:48.559 | INFO     | integrations.pequeno_mundo_client_proxy:get_products:39 - 🔍 Searching Pequeño Mundo for: 'juguetes' (with proxy)
+2025-08-17 15:26:48.559 | INFO     | integrations.pequeno_mundo_client_proxy:get_products:72 - 🔄 Using proxy: brd.superproxy.io:33335
+2025-08-17 15:26:48.559 | INFO     | integrations.pequeno_mundo_client_proxy:get_products:87 - 🌐 Trying URL: https://tienda.pequenomundo.com/catalogsearch/result/?q=juguetes
+2025-08-17 15:26:49.942 | WARNING  | integrations.pequeno_mundo_client_proxy:get_products:114 - ❌ Failed to fetch https://tienda.pequenomundo.com/catalogsearch/result/?q=juguetes: 407, message='Auth failed', url='http://brd-customer-hl_3ba9be49-zone-residential_proxy1:71fbc17dc3357d4662372703e2db7f2c766beaeca2a68da5678c4abfb6efdece@brd.superproxy.io:33335'
+2025-08-17 15:26:49.943 | INFO     | integrations.pequeno_mundo_client_proxy:get_products:87 - 🌐 Trying URL: https://tienda.pequenomundo.com/catalogsearch/result/index/?q=juguetes
+2025-08-17 15:26:51.135 | WARNING  | integrations.pequeno_mundo_client_proxy:get_products:114 - ❌ Failed to fetch https://tienda.pequenomundo.com/catalogsearch/result/index/?q=juguetes: 407, message='Auth failed', url='http://brd-customer-hl_3ba9be49-zone-residential_proxy1:71fbc17dc3357d4662372703e2db7f2c766beaeca2a68da5678c4abfb6efdece@brd.superproxy.io:33335'
+2025-08-17 15:26:51.136 | ERROR    | integrations.pequeno_mundo_client_proxy:get_products:118 - 💥 All URLs failed even with proxy
+2025-08-17 15:26:51.136 | WARNING  | __main__:test_proxy_workflow:78 - ⚠️  Proxy scraping failed - using realistic simulation data
+2025-08-17 15:26:51.136 | INFO     | __main__:test_proxy_workflow:79 - 💡 This shows what would happen with working proxy scraping...
+2025-08-17 15:26:51.136 | INFO     | __main__:test_proxy_workflow:84 - 
+📦 PROCESSING 5 TOYS (REALISTIC SIMULATION):
+2025-08-17 15:26:51.136 | INFO     | __main__:test_proxy_workflow:86 -   1. Tablet Educativa Fisher-Price Laugh & Learn Smart Stages
+2025-08-17 15:26:51.136 | INFO     | __main__:test_proxy_workflow:87 -      Price: ₡18,990
+2025-08-17 15:26:51.136 | INFO     | __main__:test_proxy_workflow:86 -   2. LEGO Classic Caja de Ladrillos Creativos Grande 790 Piezas
+2025-08-17 15:26:51.137 | INFO     | __main__:test_proxy_workflow:87 -      Price: ₡24,500
+2025-08-17 15:26:51.137 | INFO     | __main__:test_proxy_workflow:86 -   3. Barbie Dreamhouse Casa de los Sueños con Ascensor
+2025-08-17 15:26:51.137 | INFO     | __main__:test_proxy_workflow:87 -      Price: ₡89,990
+2025-08-17 15:26:51.137 | INFO     | __main__:test_proxy_workflow:86 -   4. Hot Wheels Track Builder Mega Rally Kit
+2025-08-17 15:26:51.137 | INFO     | __main__:test_proxy_workflow:87 -      Price: ₡15,750
+2025-08-17 15:26:51.137 | INFO     | __main__:test_proxy_workflow:86 -   5. Nerf Elite 2.0 Commander Blaster RD-6
+2025-08-17 15:26:51.137 | INFO     | __main__:test_proxy_workflow:87 -      Price: ₡12,990
+2025-08-17 15:26:51.137 | INFO     | __main__:test_proxy_workflow:90 - 
+🎨 STEP 2: AI Rebranding + Image Processing...
+2025-08-17 15:26:57.495 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/juguetes/hot_wheels_track_builder_mega_rally_kit.jpg
+2025-08-17 15:26:57.496 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/juguetes/20250817_152657/Mega_Circuito_Rally_Veloz.jpg
+2025-08-17 15:26:58.148 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/juguetes/nerf_elite_2_0_commander_blaster_rd_6.jpg
+2025-08-17 15:26:58.148 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/juguetes/20250817_152658/Comandante_Élite_Pro_2_0.jpg
+2025-08-17 15:26:59.107 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/juguetes/tablet_educativa_fisher_price_laugh___learn_smart_stages.jpg
+2025-08-17 15:26:59.107 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/juguetes/20250817_152659/Tableta_Aprende_y_Sonríe_Fishe.jpg
+2025-08-17 15:27:00.472 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/juguetes/barbie_dreamhouse_casa_de_los_sueños_con_ascensor.jpg
+2025-08-17 15:27:00.472 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/juguetes/20250817_152700/Villa_Encanto_Barbie__Palacio_.jpg
+2025-08-17 15:27:00.473 | INFO     | __main__:test_proxy_workflow:94 - 
+🏆 FINAL RESULTS - SHAYMEE BRANDED PRODUCTS:
+2025-08-17 15:27:00.473 | INFO     | __main__:test_proxy_workflow:95 - ======================================================================
+2025-08-17 15:27:00.473 | INFO     | __main__:test_proxy_workflow:110 - 
+🧸 TOY #1: Tableta Aprende y Sonríe Fisher-Price
+2025-08-17 15:27:00.473 | INFO     | __main__:test_proxy_workflow:111 -    📦 Original: Tablet Educativa Fisher-Price Laugh & Learn Smart Stages
+2025-08-17 15:27:00.473 | INFO     | __main__:test_proxy_workflow:112 -    💰 Price: ₡18,990 → ₡29,244
+2025-08-17 15:27:00.473 | INFO     | __main__:test_proxy_workflow:113 -    📈 Profit: ₡10,250 (35.1% margin)
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:114 -    ⚖️  Weight: light
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:115 -    💬 Description: La Tableta Aprende y Sonríe Fisher-Price es la compañera ideal para el aprendizaje temprano de tu hi...
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:119 -    🌟 Features: 4 highlighted
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:121 -       • Contenido adaptativo para diferentes etapas de aprendizaje
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:121 -       • Interfaz amigable y segura para niños
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:126 -    🖼️  Image: ✅ Processed and branded
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:110 - 
+🧸 TOY #2: Bloques Maestros - Gran Set Creativo 790 Piezas
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:111 -    📦 Original: LEGO Classic Caja de Ladrillos Creativos Grande 790 Piezas
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:112 -    💰 Price: ₡24,500 → ₡36,763
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:113 -    📈 Profit: ₡12,259 (33.3% margin)
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:114 -    ⚖️  Weight: medium
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:115 -    💬 Description: Descubre un mundo sin límites con el Gran Set Creativo de Bloques Maestros, diseñado para despertar ...
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:119 -    🌟 Features: 3 highlighted
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:121 -       • 790 piezas de variados colores y formas para construcciones sin fin
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:121 -       • Fomenta la creatividad y el desarrollo de habilidades motrices finas
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:128 -    🖼️  Image: ⚠️  Processing may have failed
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:110 - 
+🧸 TOY #3: Villa Encanto Barbie: Palacio de Ensueño
+2025-08-17 15:27:00.474 | INFO     | __main__:test_proxy_workflow:111 -    📦 Original: Barbie Dreamhouse Casa de los Sueños con Ascensor
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:112 -    💰 Price: ₡89,990 → ₡131,892
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:113 -    📈 Profit: ₡41,898 (31.8% margin)
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:114 -    ⚖️  Weight: heavy
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:115 -    💬 Description: Descubre un mundo de lujo y diversión con la Villa Encanto Barbie: Palacio de Ensueño. Este majestuo...
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:119 -    🌟 Features: 4 highlighted
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:121 -       • Ascensor funcional para mover tus Barbies entre los pisos con facilidad
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:121 -       • Diseño detallado y moderno, perfecto para horas de juego imaginativo
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:126 -    🖼️  Image: ✅ Processed and branded
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:110 - 
+🧸 TOY #4: Mega Circuito Rally Veloz
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:111 -    📦 Original: Hot Wheels Track Builder Mega Rally Kit
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:112 -    💰 Price: ₡15,750 → ₡24,885
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:113 -    📈 Profit: ₡9,131 (36.7% margin)
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:114 -    ⚖️  Weight: medium
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:115 -    💬 Description: Transforma tu hogar en una emocionante pista de carreras con el Mega Circuito Rally Veloz. Diseñado ...
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:119 -    🌟 Features: 4 highlighted
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:121 -       • Configuración personalizable para una experiencia única de carreras
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:121 -       • Compatible con todos los coches Hot Wheels para expandir tu colección
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:126 -    🖼️  Image: ✅ Processed and branded
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:110 - 
+🧸 TOY #5: Comandante Élite Pro 2.0
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:111 -    📦 Original: Nerf Elite 2.0 Commander Blaster RD-6
+2025-08-17 15:27:00.475 | INFO     | __main__:test_proxy_workflow:112 -    💰 Price: ₡12,990 → ₡19,803
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:113 -    📈 Profit: ₡6,809 (34.4% margin)
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:114 -    ⚖️  Weight: light
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:115 -    💬 Description: Experimenta la emoción del juego con el Comandante Élite Pro 2.0, diseñado para ofrecer precisión in...
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:119 -    🌟 Features: 4 highlighted
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:121 -       • Capacidad de 6 dardos para una acción continua
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:121 -       • Diseño ergonómico para un manejo cómodo y preciso
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:126 -    🖼️  Image: ✅ Processed and branded
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:134 - 
+💼 BUSINESS SUMMARY:
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:135 - 🧸 Total Toys Processed: 5
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:136 - 💸 Total Investment: ₡162,220.00
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:137 - 💰 Total Revenue: ₡242,587.12
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:138 - 📈 Total Profit: ₡80,367.12
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:139 - 🎯 Average Margin: 33.1%
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:142 - 
+📁 FILE ORGANIZATION:
+2025-08-17 15:27:00.476 | INFO     | __main__:test_proxy_workflow:148 - 📂 Processed images: 5 batches in processed_images/juguetes
+2025-08-17 15:27:00.477 | INFO     | __main__:test_proxy_workflow:152 - 🗂️  Cached images: 5 files in image_cache/juguetes
+2025-08-17 15:27:00.477 | INFO     | __main__:test_proxy_workflow:155 - 
+🚀 NEXT STEPS:
+2025-08-17 15:27:00.477 | INFO     | __main__:test_proxy_workflow:156 -   1. ✅ Products are AI-rebranded with professional names
+2025-08-17 15:27:00.477 | INFO     | __main__:test_proxy_workflow:157 -   2. ✅ Prices calculated with optimal profit margins
+2025-08-17 15:27:00.477 | INFO     | __main__:test_proxy_workflow:158 -   3. ✅ Images processed with Shaymee branding
+2025-08-17 15:27:00.477 | INFO     | __main__:test_proxy_workflow:159 -   4. 📱 Ready for WhatsApp Bot integration
+2025-08-17 15:27:00.477 | INFO     | __main__:test_proxy_workflow:160 -   5. 💳 Ready for SINPE payment processing
+2025-08-17 15:27:00.477 | INFO     | __main__:test_proxy_workflow:161 -   6. 📦 Ready for Correos CR shipping coordination
+2025-08-17 15:27:00.477 | INFO     | __main__:test_proxy_workflow:164 - 
+🔧 PROXY TROUBLESHOOTING:
+2025-08-17 15:27:00.477 | INFO     | __main__:test_proxy_workflow:165 -   • Proxy credentials loaded correctly
+2025-08-17 15:27:00.477 | INFO     | __main__:test_proxy_workflow:166 -   • Getting 407 Auth Failed from Bright Data
+2025-08-17 15:27:00.477 | INFO     | __main__:test_proxy_workflow:167 -   • May need session ID or country targeting
+2025-08-17 15:27:00.477 | INFO     | __main__:test_proxy_workflow:168 -   • Contact Bright Data support for correct format
+2025-08-17 15:27:00.477 | SUCCESS  | __main__:test_proxy_workflow:170 - 
+🎉 WORKFLOW COMPLETE!
+2025-08-17 15:27:00.477 | INFO     | __main__:test_proxy_workflow:171 - 💡 System ready for production with working proxy!

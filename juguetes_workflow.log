@@ -1,0 +1,206 @@
+2025-08-17 15:10:17.625 | INFO     | __main__:main:73 - 🧸 Starting Shaymee Toy Rebranding Workflow
+2025-08-17 15:10:17.665 | INFO     | __main__:main:84 - 🔍 Searching for toys on Pequeño Mundo...
+2025-08-17 15:10:17.665 | INFO     | integrations.pequeno_mundo_client_clean:get_products:23 - Searching Pequeño Mundo for: 'juguetes'
+2025-08-17 15:10:17.985 | ERROR    | integrations.pequeno_mundo_client_clean:get_products:42 - Failed to fetch page: HTTP 403
+2025-08-17 15:10:17.985 | WARNING  | __main__:search_toys_pm:61 - ⚠️ No toys found or scraping failed
+2025-08-17 15:10:17.985 | INFO     | __main__:main:89 - 📦 Using mock toy data for demonstration
+2025-08-17 15:10:17.985 | INFO     | __main__:main:93 - 🎨 Processing toys with AI rebranding...
+2025-08-17 15:10:24.292 | ERROR    | integrations.product_rebrander:process_product_image:225 - Error processing image: Cannot connect to host via.placeholder.com:443 ssl:default [nodename nor servname provided, or not known]
+2025-08-17 15:10:24.302 | ERROR    | integrations.product_rebrander:process_product_image:227 - Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1532, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1148, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1179, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 976, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jcubero/Documents/Shaimee/integrations/product_rebrander.py", line 117, in process_product_image
+    async with session.get(image_url) as response:
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1538, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host via.placeholder.com:443 ssl:default [nodename nor servname provided, or not known]
+
+2025-08-17 15:10:24.464 | ERROR    | integrations.product_rebrander:process_product_image:225 - Error processing image: Cannot connect to host via.placeholder.com:443 ssl:default [nodename nor servname provided, or not known]
+2025-08-17 15:10:24.466 | ERROR    | integrations.product_rebrander:process_product_image:227 - Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1532, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1148, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1179, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 976, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jcubero/Documents/Shaimee/integrations/product_rebrander.py", line 117, in process_product_image
+    async with session.get(image_url) as response:
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1538, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host via.placeholder.com:443 ssl:default [nodename nor servname provided, or not known]
+
+2025-08-17 15:10:27.179 | ERROR    | integrations.product_rebrander:process_product_image:225 - Error processing image: Cannot connect to host via.placeholder.com:443 ssl:default [nodename nor servname provided, or not known]
+2025-08-17 15:10:27.182 | ERROR    | integrations.product_rebrander:process_product_image:227 - Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1532, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1148, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1179, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 976, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jcubero/Documents/Shaimee/integrations/product_rebrander.py", line 117, in process_product_image
+    async with session.get(image_url) as response:
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/aiohttp/connector.py", line 1538, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host via.placeholder.com:443 ssl:default [nodename nor servname provided, or not known]
+
+2025-08-17 15:10:27.183 | SUCCESS  | __main__:main:98 - \n🎉 Toy Rebranding Complete! Processed 3 toys:
+2025-08-17 15:10:27.183 | INFO     | __main__:main:101 - \n======================================================================
+2025-08-17 15:10:27.183 | INFO     | __main__:main:102 - 🧸 Toy #1
+2025-08-17 15:10:27.183 | INFO     | __main__:main:103 - 📦 Original: Carro de Control Remoto 4x4
+2025-08-17 15:10:27.184 | INFO     | __main__:main:104 - 🏷️  Rebranded: Aventura Todo Terreno RC
+2025-08-17 15:10:27.184 | INFO     | __main__:main:105 - 💬 Description: Descubre la emoción de la aventura con el 'Aventura Todo Terreno RC', diseñado para llevarte a través de cualquier desafío con estilo y potencia. Este coche de control remoto 4x4 combina tecnología avanzada y un diseño robusto para proporcionar diversión sin límites en cualquier superficie.
+2025-08-17 15:10:27.184 | INFO     | __main__:main:109 - 💰 Price: ₡15,500 → ₡24,725
+2025-08-17 15:10:27.184 | INFO     | __main__:main:110 - 📈 Profit: ₡9,220 (37.3%)
+2025-08-17 15:10:27.184 | INFO     | __main__:main:111 - ⚖️  Weight Class: medium
+2025-08-17 15:10:27.184 | INFO     | __main__:main:115 - \n🌟 Key Features:
+2025-08-17 15:10:27.184 | INFO     | __main__:main:117 -    • Tecnología de control remoto de alta precisión para una maniobrabilidad superior
+2025-08-17 15:10:27.184 | INFO     | __main__:main:117 -    • Diseño resistente 4x4, perfecto para terrenos difíciles y aventuras al aire libre
+2025-08-17 15:10:27.184 | INFO     | __main__:main:117 -    • Batería de larga duración para horas continuas de diversión
+2025-08-17 15:10:27.184 | INFO     | __main__:main:117 -    • Construcción duradera y materiales de alta calidad para soportar impactos
+2025-08-17 15:10:27.184 | WARNING  | __main__:main:124 - ⚠️  Image processing may have failed
+2025-08-17 15:10:27.185 | INFO     | __main__:main:101 - \n======================================================================
+2025-08-17 15:10:27.185 | INFO     | __main__:main:102 - 🧸 Toy #2
+2025-08-17 15:10:27.185 | INFO     | __main__:main:103 - 📦 Original: Muñeca Princesa con Vestido Brillante
+2025-08-17 15:10:27.185 | INFO     | __main__:main:104 - 🏷️  Rebranded: Princesa Estelar Luz y Glamour
+2025-08-17 15:10:27.185 | INFO     | __main__:main:105 - 💬 Description: Descubre la magia y el encanto con nuestra Princesa Estelar Luz y Glamour, una muñeca que captura la imaginación con su vestido deslumbrante y detalles que brillan con luz propia. Perfecta para niños que sueñan con cuentos de hadas y aventuras mágicas.
+2025-08-17 15:10:27.185 | INFO     | __main__:main:109 - 💰 Price: ₡8,750 → ₡13,598
+2025-08-17 15:10:27.185 | INFO     | __main__:main:110 - 📈 Profit: ₡4,843 (35.6%)
+2025-08-17 15:10:27.185 | INFO     | __main__:main:111 - ⚖️  Weight Class: light
+2025-08-17 15:10:27.185 | INFO     | __main__:main:115 - \n🌟 Key Features:
+2025-08-17 15:10:27.185 | INFO     | __main__:main:117 -    • Vestido con luces LED que cambian de color para deslumbrar en cada juego
+2025-08-17 15:10:27.185 | INFO     | __main__:main:117 -    • Material de alta calidad y diseño detallado que inspira juegos de imaginación
+2025-08-17 15:10:27.185 | INFO     | __main__:main:117 -    • Accesorios intercambiables para personalizar la experiencia de juego
+2025-08-17 15:10:27.185 | INFO     | __main__:main:117 -    • Ideal para fomentar la creatividad y el amor por las historias de fantasía
+2025-08-17 15:10:27.185 | WARNING  | __main__:main:124 - ⚠️  Image processing may have failed
+2025-08-17 15:10:27.185 | INFO     | __main__:main:101 - \n======================================================================
+2025-08-17 15:10:27.186 | INFO     | __main__:main:102 - 🧸 Toy #3
+2025-08-17 15:10:27.186 | INFO     | __main__:main:103 - 📦 Original: Set de Bloques de Construcción 500 piezas
+2025-08-17 15:10:27.186 | INFO     | __main__:main:104 - 🏷️  Rebranded: ConstruJuego Fantasía 500
+2025-08-17 15:10:27.186 | INFO     | __main__:main:105 - 💬 Description: Despierta la imaginación y creatividad de tus hijos con el 'ConstruJuego Fantasía 500', el set definitivo de bloques de construcción. Con 500 piezas de colores vibrantes y formas variadas, ofrece infinitas posibilidades para construir, crear y aprender jugando.
+2025-08-17 15:10:27.186 | INFO     | __main__:main:109 - 💰 Price: ₡12,900 → ₡19,454
+2025-08-17 15:10:27.186 | INFO     | __main__:main:110 - 📈 Profit: ₡6,549 (33.7%)
+2025-08-17 15:10:27.186 | INFO     | __main__:main:111 - ⚖️  Weight Class: medium
+2025-08-17 15:10:27.186 | INFO     | __main__:main:115 - \n🌟 Key Features:
+2025-08-17 15:10:27.186 | INFO     | __main__:main:117 -    • 500 piezas de colores vibrantes para máxima creatividad
+2025-08-17 15:10:27.186 | INFO     | __main__:main:117 -    • Incluye una variedad de formas para construcciones complejas
+2025-08-17 15:10:27.186 | INFO     | __main__:main:117 -    • Fomenta el desarrollo de habilidades motoras finas y la coordinación
+2025-08-17 15:10:27.187 | INFO     | __main__:main:117 -    • Material seguro y duradero para horas de juego sin fin
+2025-08-17 15:10:27.187 | INFO     | __main__:main:117 -    • Ideal para niños y niñas de todas las edades
+2025-08-17 15:10:27.187 | WARNING  | __main__:main:124 - ⚠️  Image processing may have failed
+2025-08-17 15:10:27.187 | INFO     | __main__:main:128 - \n📊 Toy Business Summary:
+2025-08-17 15:10:27.187 | INFO     | __main__:main:129 - 🧸 Total Toys: 3
+2025-08-17 15:10:27.187 | INFO     | __main__:main:130 - 💸 Total Cost: ₡37,150.00
+2025-08-17 15:10:27.187 | INFO     | __main__:main:131 - 💰 Total Revenue: ₡57,777.33
+2025-08-17 15:10:27.187 | INFO     | __main__:main:132 - 📈 Total Profit: ₡20,627.33
+2025-08-17 15:10:27.187 | INFO     | __main__:main:133 - 🎯 Avg. Profit Margin: 35.7%
+2025-08-17 15:10:27.187 | INFO     | __main__:main:136 - \n📁 Checking folder structure...
+2025-08-17 15:10:27.187 | SUCCESS  | __main__:main:151 - \n✅ Toy workflow completed successfully!

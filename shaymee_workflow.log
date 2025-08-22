@@ -1,0 +1,580 @@
+2025-08-17 14:24:09.788 | INFO     | __main__:main:15 - 🚀 Starting Shaymee E-commerce Automation Workflow
+2025-08-17 14:24:09.837 | INFO     | __main__:main:28 - 🔍 Searching for: Relojes
+2025-08-17 14:24:09.837 | INFO     | integrations.pequeno_mundo_client:get_products:12 - Starting scraper for Pequeño Mundo with search term: 'Relojes'
+2025-08-17 14:24:12.050 | INFO     | integrations.pequeno_mundo_client:get_products:22 - Navigating to: https://tienda.pequenomundo.com/catalogsearch/result/?q=Relojes
+2025-08-17 14:24:14.795 | INFO     | integrations.pequeno_mundo_client:get_products:30 - Accepted cookies
+2025-08-17 14:24:16.960 | INFO     | integrations.pequeno_mundo_client:get_products:38 - Screenshot saved to debug_screenshot.png
+2025-08-17 14:24:16.970 | INFO     | integrations.pequeno_mundo_client:get_products:44 - Page HTML saved to page_content.html
+2025-08-17 14:24:16.971 | INFO     | integrations.pequeno_mundo_client:get_products:47 - Waiting for any product elements to appear...
+2025-08-17 14:24:16.990 | INFO     | integrations.pequeno_mundo_client:get_products:58 - Found 4 products
+2025-08-17 14:24:17.229 | INFO     | __main__:main:36 - 🎨 Processing products with AI...
+2025-08-17 14:24:25.096 | SUCCESS  | __main__:main:40 - 
+✨ Rebranding Complete! Here are your products:
+2025-08-17 14:24:25.096 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:24:25.097 | INFO     | __main__:main:43 - 🆔 Product #1
+2025-08-17 14:24:25.097 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y metal 28x28x4cm
+2025-08-17 14:24:25.097 | INFO     | __main__:main:45 - 🏷️  Rebranded: TempoElegante
+2025-08-17 14:24:25.097 | INFO     | __main__:main:46 - 💬 Description: Descubre la elegancia atemporal con TempoElegante, un reloj de pared que combina la modernidad del metal con la ligereza del plástico. Diseñado meticulosamente para embellecer cualquier espacio, mide 28x28x4cm, ofreciendo una visión clara y un estilo sofisticado.
+2025-08-17 14:24:25.097 | INFO     | __main__:main:50 - 💰 Price: $320000.00 → $506606.53
+2025-08-17 14:24:25.097 | INFO     | __main__:main:51 - 📈 Profit: $186601.53 (36.8%)
+2025-08-17 14:24:25.097 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:24:25.097 | INFO     | __main__:main:57 -    • Diseño moderno y elegante que complementa cualquier decoración
+2025-08-17 14:24:25.097 | INFO     | __main__:main:57 -    • Construcción híbrida de metal y plástico para durabilidad y ligereza
+2025-08-17 14:24:25.097 | INFO     | __main__:main:57 -    • Dimensiones perfectas para visibilidad y estilo sin sobrecargar el espacio
+2025-08-17 14:24:25.097 | INFO     | __main__:main:59 - 🖼️  Image: processed_images/Reloj_pared_plástico.jpg
+2025-08-17 14:24:25.098 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:24:25.098 | INFO     | __main__:main:43 - 🆔 Product #2
+2025-08-17 14:24:25.098 | INFO     | __main__:main:44 - 📦 Original: Reloj de mesa con cargador
+2025-08-17 14:24:25.098 | INFO     | __main__:main:45 - 🏷️  Rebranded: Estación Elegante Tiempo+
+2025-08-17 14:24:25.098 | INFO     | __main__:main:46 - 💬 Description: Transforma tu espacio con 'Estación Elegante Tiempo+', el reloj de mesa que no solo mide el tiempo con precisión, sino que también carga tus dispositivos con estilo. Su diseño moderno y funcionalidad avanzada lo convierten en el complemento perfecto para cualquier habitación.
+2025-08-17 14:24:25.098 | INFO     | __main__:main:50 - 💰 Price: $780000.00 → $1291646.06
+2025-08-17 14:24:25.098 | INFO     | __main__:main:51 - 📈 Profit: $511641.06 (39.6%)
+2025-08-17 14:24:25.098 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:24:25.098 | INFO     | __main__:main:57 -    • Carga inalámbrica rápida para dispositivos compatibles.
+2025-08-17 14:24:25.098 | INFO     | __main__:main:57 -    • Diseño moderno y elegante que combina con cualquier decoración.
+2025-08-17 14:24:25.098 | INFO     | __main__:main:57 -    • Pantalla de reloj digital clara y fácil de leer.
+2025-08-17 14:24:25.098 | INFO     | __main__:main:57 -    • Compacto y ligero, ideal para cualquier espacio en el hogar u oficina.
+2025-08-17 14:24:25.098 | INFO     | __main__:main:59 - 🖼️  Image: processed_images/Reloj_de_mesa_con_ca.jpg
+2025-08-17 14:24:25.098 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:24:25.098 | INFO     | __main__:main:43 - 🆔 Product #3
+2025-08-17 14:24:25.099 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y vidrio 25.4x25.4x4cm
+2025-08-17 14:24:25.099 | INFO     | __main__:main:45 - 🏷️  Rebranded: Eleganza Tiempo
+2025-08-17 14:24:25.099 | INFO     | __main__:main:46 - 💬 Description: Descubre 'Eleganza Tiempo', un reloj de pared que combina la sofisticación del vidrio y la practicidad del plástico en un diseño elegante de 25.4x25.4x4cm. Perfecto para añadir un toque de elegancia y funcionalidad a cualquier espacio.
+2025-08-17 14:24:25.099 | INFO     | __main__:main:50 - 💰 Price: $230000.00 → $354004.83
+2025-08-17 14:24:25.099 | INFO     | __main__:main:51 - 📈 Profit: $123999.83 (35.0%)
+2025-08-17 14:24:25.099 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:24:25.099 | INFO     | __main__:main:57 -    • Diseño moderno y elegante que complementa cualquier decoración
+2025-08-17 14:24:25.099 | INFO     | __main__:main:57 -    • Fabricado con materiales de alta calidad para durabilidad y precisión
+2025-08-17 14:24:25.099 | INFO     | __main__:main:57 -    • Dimensiones perfectas para visibilidad y estilo sin sobrecargar el espacio
+2025-08-17 14:24:25.099 | INFO     | __main__:main:59 - 🖼️  Image: processed_images/Reloj_pared_plástico.jpg
+2025-08-17 14:24:25.099 | INFO     | __main__:main:63 - 
+📊 Summary:
+2025-08-17 14:24:25.099 | INFO     | __main__:main:64 - Total Products: 3
+2025-08-17 14:24:25.099 | INFO     | __main__:main:65 - Total Cost: $1330000.00
+2025-08-17 14:24:25.099 | INFO     | __main__:main:66 - Total Revenue: $2152257.42
+2025-08-17 14:24:25.099 | INFO     | __main__:main:67 - Total Profit: $822257.42
+2025-08-17 14:24:25.099 | INFO     | __main__:main:68 - Avg. Profit Margin: 38.2%
+2025-08-17 14:24:25.100 | INFO     | __main__:main:76 - 
+🏁 Workflow completed!
+2025-08-17 14:27:11.947 | INFO     | __main__:main:15 - 🚀 Starting Shaymee E-commerce Automation Workflow
+2025-08-17 14:27:12.036 | INFO     | __main__:main:28 - 🔍 Searching for: Relojes
+2025-08-17 14:27:12.036 | INFO     | integrations.pequeno_mundo_client:get_products:12 - Starting scraper for Pequeño Mundo with search term: 'Relojes'
+2025-08-17 14:27:14.341 | INFO     | integrations.pequeno_mundo_client:get_products:22 - Navigating to: https://tienda.pequenomundo.com/catalogsearch/result/?q=Relojes
+2025-08-17 14:27:17.114 | INFO     | integrations.pequeno_mundo_client:get_products:30 - Accepted cookies
+2025-08-17 14:27:19.262 | INFO     | integrations.pequeno_mundo_client:get_products:38 - Screenshot saved to debug_screenshot.png
+2025-08-17 14:27:19.269 | INFO     | integrations.pequeno_mundo_client:get_products:44 - Page HTML saved to page_content.html
+2025-08-17 14:27:19.269 | INFO     | integrations.pequeno_mundo_client:get_products:47 - Waiting for any product elements to appear...
+2025-08-17 14:27:19.283 | INFO     | integrations.pequeno_mundo_client:get_products:58 - Found 4 products
+2025-08-17 14:27:19.573 | INFO     | __main__:main:36 - 🎨 Processing products with AI...
+2025-08-17 14:27:19.574 | ERROR    | integrations.product_rebrander:rebrand_product:248 - Error in product processing: cannot access local variable 'content' where it is not associated with a value
+2025-08-17 14:27:19.574 | ERROR    | integrations.product_rebrander:rebrand_product:248 - Error in product processing: cannot access local variable 'content' where it is not associated with a value
+2025-08-17 14:27:19.574 | ERROR    | integrations.product_rebrander:rebrand_product:248 - Error in product processing: cannot access local variable 'content' where it is not associated with a value
+2025-08-17 14:27:19.574 | SUCCESS  | __main__:main:40 - 
+✨ Rebranding Complete! Here are your products:
+2025-08-17 14:27:19.574 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:27:19.574 | INFO     | __main__:main:43 - 🆔 Product #1
+2025-08-17 14:27:19.574 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y metal 28x28x4cm
+2025-08-17 14:27:19.574 | INFO     | __main__:main:45 - 🏷️  Rebranded: Reloj pared plástico y metal 28x28x4cm
+2025-08-17 14:27:19.574 | INFO     | __main__:main:46 - 💬 Description: None
+2025-08-17 14:27:19.574 | INFO     | __main__:main:50 - 💰 Price: $0.00 → $0.00
+2025-08-17 14:27:19.574 | INFO     | __main__:main:51 - 📈 Profit: $0.00 (0.0%)
+2025-08-17 14:27:19.574 | INFO     | __main__:main:59 - 🖼️  Image: None
+2025-08-17 14:27:19.574 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:27:19.574 | INFO     | __main__:main:43 - 🆔 Product #2
+2025-08-17 14:27:19.574 | INFO     | __main__:main:44 - 📦 Original: Reloj de mesa con cargador
+2025-08-17 14:27:19.574 | INFO     | __main__:main:45 - 🏷️  Rebranded: Reloj de mesa con cargador
+2025-08-17 14:27:19.574 | INFO     | __main__:main:46 - 💬 Description: None
+2025-08-17 14:27:19.574 | INFO     | __main__:main:50 - 💰 Price: $0.00 → $0.00
+2025-08-17 14:27:19.574 | INFO     | __main__:main:51 - 📈 Profit: $0.00 (0.0%)
+2025-08-17 14:27:19.574 | INFO     | __main__:main:59 - 🖼️  Image: None
+2025-08-17 14:27:19.574 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:27:19.574 | INFO     | __main__:main:43 - 🆔 Product #3
+2025-08-17 14:27:19.574 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y vidrio 25.4x25.4x4cm
+2025-08-17 14:27:19.574 | INFO     | __main__:main:45 - 🏷️  Rebranded: Reloj pared plástico y vidrio 25.4x25.4x4cm
+2025-08-17 14:27:19.575 | INFO     | __main__:main:46 - 💬 Description: None
+2025-08-17 14:27:19.575 | INFO     | __main__:main:50 - 💰 Price: $0.00 → $0.00
+2025-08-17 14:27:19.575 | INFO     | __main__:main:51 - 📈 Profit: $0.00 (0.0%)
+2025-08-17 14:27:19.575 | INFO     | __main__:main:59 - 🖼️  Image: None
+2025-08-17 14:27:19.575 | INFO     | __main__:main:63 - 
+📊 Summary:
+2025-08-17 14:27:19.575 | INFO     | __main__:main:64 - Total Products: 3
+2025-08-17 14:27:19.575 | INFO     | __main__:main:65 - Total Cost: $0.00
+2025-08-17 14:27:19.575 | INFO     | __main__:main:66 - Total Revenue: $0.00
+2025-08-17 14:27:19.575 | INFO     | __main__:main:67 - Total Profit: $0.00
+2025-08-17 14:27:19.575 | INFO     | __main__:main:68 - Avg. Profit Margin: 0.0%
+2025-08-17 14:27:19.575 | INFO     | __main__:main:76 - 
+🏁 Workflow completed!
+2025-08-17 14:28:44.862 | INFO     | __main__:main:15 - 🚀 Starting Shaymee E-commerce Automation Workflow
+2025-08-17 14:28:44.903 | INFO     | __main__:main:28 - 🔍 Searching for: Relojes
+2025-08-17 14:28:44.903 | INFO     | integrations.pequeno_mundo_client:get_products:12 - Starting scraper for Pequeño Mundo with search term: 'Relojes'
+2025-08-17 14:28:46.835 | INFO     | integrations.pequeno_mundo_client:get_products:22 - Navigating to: https://tienda.pequenomundo.com/catalogsearch/result/?q=Relojes
+2025-08-17 14:28:49.575 | INFO     | integrations.pequeno_mundo_client:get_products:30 - Accepted cookies
+2025-08-17 14:28:51.742 | INFO     | integrations.pequeno_mundo_client:get_products:38 - Screenshot saved to debug_screenshot.png
+2025-08-17 14:28:51.752 | INFO     | integrations.pequeno_mundo_client:get_products:44 - Page HTML saved to page_content.html
+2025-08-17 14:28:51.752 | INFO     | integrations.pequeno_mundo_client:get_products:47 - Waiting for any product elements to appear...
+2025-08-17 14:28:51.764 | INFO     | integrations.pequeno_mundo_client:get_products:58 - Found 4 products
+2025-08-17 14:28:51.989 | INFO     | __main__:main:36 - 🎨 Processing products with AI...
+2025-08-17 14:28:58.621 | INFO     | integrations.product_rebrander:process_product_image:170 - ✅ Created branded image: processed_images/Tiempo_Elegante.jpg
+2025-08-17 14:28:59.156 | INFO     | integrations.product_rebrander:process_product_image:170 - ✅ Created branded image: processed_images/Temporis_Elegante.jpg
+2025-08-17 14:28:59.819 | INFO     | integrations.product_rebrander:process_product_image:170 - ✅ Created branded image: processed_images/Estación_Elegante__Reloj_y_Car.jpg
+2025-08-17 14:28:59.820 | SUCCESS  | __main__:main:40 - 
+✨ Rebranding Complete! Here are your products:
+2025-08-17 14:28:59.820 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:28:59.820 | INFO     | __main__:main:43 - 🆔 Product #1
+2025-08-17 14:28:59.820 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y metal 28x28x4cm
+2025-08-17 14:28:59.820 | INFO     | __main__:main:45 - 🏷️  Rebranded: Tiempo Elegante
+2025-08-17 14:28:59.820 | INFO     | __main__:main:46 - 💬 Description: Descubre 'Tiempo Elegante', un reloj de pared que combina la modernidad del metal con la ligereza del plástico, diseñado para enriquecer cualquier espacio con su presencia. Su diseño de 28x28x4cm lo convierte en una pieza destacada en tu hogar u oficina.
+2025-08-17 14:28:59.820 | INFO     | __main__:main:50 - 💰 Price: $320000.00 → $494202.18
+2025-08-17 14:28:59.820 | INFO     | __main__:main:51 - 📈 Profit: $174197.18 (35.2%)
+2025-08-17 14:28:59.820 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:28:59.820 | INFO     | __main__:main:57 -    • Diseño moderno y elegante que combina plástico y metal
+2025-08-17 14:28:59.820 | INFO     | __main__:main:57 -    • Dimensiones perfectas para cualquier espacio: 28x28x4cm
+2025-08-17 14:28:59.820 | INFO     | __main__:main:57 -    • Mecanismo de tiempo preciso y silencioso
+2025-08-17 14:28:59.820 | INFO     | __main__:main:59 - 🖼️  Image: processed_images/Tiempo_Elegante.jpg
+2025-08-17 14:28:59.821 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:28:59.821 | INFO     | __main__:main:43 - 🆔 Product #2
+2025-08-17 14:28:59.821 | INFO     | __main__:main:44 - 📦 Original: Reloj de mesa con cargador
+2025-08-17 14:28:59.821 | INFO     | __main__:main:45 - 🏷️  Rebranded: Estación Elegante: Reloj y Cargador
+2025-08-17 14:28:59.821 | INFO     | __main__:main:46 - 💬 Description: Descubre la fusión perfecta de funcionalidad y estilo con nuestra 'Estación Elegante'. Este no es solo un reloj de mesa, sino tu centro de carga inalámbrica que mantiene tus dispositivos energizados mientras adorna tu espacio con su diseño sofisticado.
+2025-08-17 14:28:59.821 | INFO     | __main__:main:50 - 💰 Price: $780000.00 → $1290384.46
+2025-08-17 14:28:59.821 | INFO     | __main__:main:51 - 📈 Profit: $510379.46 (39.6%)
+2025-08-17 14:28:59.821 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:28:59.821 | INFO     | __main__:main:57 -    • Carga inalámbrica rápida y segura para dispositivos compatibles
+2025-08-17 14:28:59.821 | INFO     | __main__:main:57 -    • Diseño elegante y minimalista que complementa cualquier decoración
+2025-08-17 14:28:59.821 | INFO     | __main__:main:57 -    • Pantalla de reloj de fácil lectura con ajustes de brillo personalizables
+2025-08-17 14:28:59.821 | INFO     | __main__:main:57 -    • Construcción duradera y de alta calidad
+2025-08-17 14:28:59.821 | INFO     | __main__:main:59 - 🖼️  Image: processed_images/Estación_Elegante__Reloj_y_Car.jpg
+2025-08-17 14:28:59.821 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:28:59.821 | INFO     | __main__:main:43 - 🆔 Product #3
+2025-08-17 14:28:59.821 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y vidrio 25.4x25.4x4cm
+2025-08-17 14:28:59.821 | INFO     | __main__:main:45 - 🏷️  Rebranded: Temporis Elegante
+2025-08-17 14:28:59.821 | INFO     | __main__:main:46 - 💬 Description: Descubre la elegancia y precisión del Temporis Elegante, un reloj de pared que combina la durabilidad del plástico con la sofisticación del vidrio. Su diseño contemporáneo de 25.4x25.4x4 cm se adapta perfectamente a cualquier espacio, aportando un toque de distinción y funcionalidad.
+2025-08-17 14:28:59.821 | INFO     | __main__:main:50 - 💰 Price: $230000.00 → $381311.42
+2025-08-17 14:28:59.821 | INFO     | __main__:main:51 - 📈 Profit: $151306.42 (39.7%)
+2025-08-17 14:28:59.821 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:28:59.822 | INFO     | __main__:main:57 -    • Diseño moderno y sofisticado que complementa cualquier habitación
+2025-08-17 14:28:59.822 | INFO     | __main__:main:57 -    • Materiales de alta calidad para durabilidad y visibilidad clara
+2025-08-17 14:28:59.822 | INFO     | __main__:main:57 -    • Tamaño perfecto para una visualización cómoda sin abrumar el espacio
+2025-08-17 14:28:59.822 | INFO     | __main__:main:59 - 🖼️  Image: processed_images/Temporis_Elegante.jpg
+2025-08-17 14:28:59.822 | INFO     | __main__:main:63 - 
+📊 Summary:
+2025-08-17 14:28:59.822 | INFO     | __main__:main:64 - Total Products: 3
+2025-08-17 14:28:59.822 | INFO     | __main__:main:65 - Total Cost: $1330000.00
+2025-08-17 14:28:59.822 | INFO     | __main__:main:66 - Total Revenue: $2165898.06
+2025-08-17 14:28:59.822 | INFO     | __main__:main:67 - Total Profit: $835898.06
+2025-08-17 14:28:59.822 | INFO     | __main__:main:68 - Avg. Profit Margin: 38.6%
+2025-08-17 14:28:59.822 | INFO     | __main__:main:76 - 
+🏁 Workflow completed!
+2025-08-17 14:30:46.558 | INFO     | __main__:main:15 - 🚀 Starting Shaymee E-commerce Automation Workflow
+2025-08-17 14:30:46.598 | INFO     | __main__:main:28 - 🔍 Searching for: Relojes
+2025-08-17 14:30:46.598 | INFO     | integrations.pequeno_mundo_client:get_products:12 - Starting scraper for Pequeño Mundo with search term: 'Relojes'
+2025-08-17 14:30:48.612 | INFO     | integrations.pequeno_mundo_client:get_products:22 - Navigating to: https://tienda.pequenomundo.com/catalogsearch/result/?q=Relojes
+2025-08-17 14:30:51.561 | INFO     | integrations.pequeno_mundo_client:get_products:30 - Accepted cookies
+2025-08-17 14:30:53.732 | INFO     | integrations.pequeno_mundo_client:get_products:38 - Screenshot saved to debug_screenshot.png
+2025-08-17 14:30:53.741 | INFO     | integrations.pequeno_mundo_client:get_products:44 - Page HTML saved to page_content.html
+2025-08-17 14:30:53.741 | INFO     | integrations.pequeno_mundo_client:get_products:47 - Waiting for any product elements to appear...
+2025-08-17 14:30:53.754 | INFO     | integrations.pequeno_mundo_client:get_products:58 - Found 4 products
+2025-08-17 14:30:54.029 | INFO     | __main__:main:36 - 🎨 Processing products with AI...
+2025-08-17 14:32:11.472 | INFO     | __main__:main:15 - 🚀 Starting Shaymee E-commerce Automation Workflow
+2025-08-17 14:32:11.514 | INFO     | __main__:main:28 - 🔍 Searching for: Relojes
+2025-08-17 14:32:11.514 | INFO     | integrations.pequeno_mundo_client:get_products:12 - Starting scraper for Pequeño Mundo with search term: 'Relojes'
+2025-08-17 14:32:13.367 | INFO     | integrations.pequeno_mundo_client:get_products:22 - Navigating to: https://tienda.pequenomundo.com/catalogsearch/result/?q=Relojes
+2025-08-17 14:32:15.958 | INFO     | integrations.pequeno_mundo_client:get_products:30 - Accepted cookies
+2025-08-17 14:32:18.117 | INFO     | integrations.pequeno_mundo_client:get_products:38 - Screenshot saved to debug_screenshot.png
+2025-08-17 14:32:18.127 | INFO     | integrations.pequeno_mundo_client:get_products:44 - Page HTML saved to page_content.html
+2025-08-17 14:32:18.127 | INFO     | integrations.pequeno_mundo_client:get_products:47 - Waiting for any product elements to appear...
+2025-08-17 14:32:18.141 | INFO     | integrations.pequeno_mundo_client:get_products:58 - Found 4 products
+2025-08-17 14:32:18.496 | INFO     | __main__:main:36 - 🎨 Processing products with AI...
+2025-08-17 14:32:23.104 | ERROR    | integrations.product_rebrander:process_product_image:200 - Error processing image: name 'datetime' is not defined
+2025-08-17 14:32:23.112 | ERROR    | integrations.product_rebrander:process_product_image:202 - Traceback (most recent call last):
+  File "/Users/jcubero/Documents/Shaimee/integrations/product_rebrander.py", line 89, in process_product_image
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+                ^^^^^^^^
+NameError: name 'datetime' is not defined. Did you forget to import 'datetime'
+
+2025-08-17 14:32:23.577 | ERROR    | integrations.product_rebrander:process_product_image:200 - Error processing image: name 'datetime' is not defined
+2025-08-17 14:32:23.581 | ERROR    | integrations.product_rebrander:process_product_image:202 - Traceback (most recent call last):
+  File "/Users/jcubero/Documents/Shaimee/integrations/product_rebrander.py", line 89, in process_product_image
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+                ^^^^^^^^
+NameError: name 'datetime' is not defined. Did you forget to import 'datetime'
+
+2025-08-17 14:32:26.389 | ERROR    | integrations.product_rebrander:process_product_image:200 - Error processing image: name 'datetime' is not defined
+2025-08-17 14:32:26.391 | ERROR    | integrations.product_rebrander:process_product_image:202 - Traceback (most recent call last):
+  File "/Users/jcubero/Documents/Shaimee/integrations/product_rebrander.py", line 89, in process_product_image
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+                ^^^^^^^^
+NameError: name 'datetime' is not defined. Did you forget to import 'datetime'
+
+2025-08-17 14:32:26.392 | SUCCESS  | __main__:main:40 - 
+✨ Rebranding Complete! Here are your products:
+2025-08-17 14:32:26.392 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:32:26.392 | INFO     | __main__:main:43 - 🆔 Product #1
+2025-08-17 14:32:26.392 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y metal 28x28x4cm
+2025-08-17 14:32:26.392 | INFO     | __main__:main:45 - 🏷️  Rebranded: Tiempo Elegante
+2025-08-17 14:32:26.392 | INFO     | __main__:main:46 - 💬 Description: Descubre 'Tiempo Elegante', el reloj de pared que combina la modernidad del plástico con la elegancia del metal en un diseño sofisticado de 28x28x4 cm. Perfecto para realzar cualquier espacio con su presencia distinguida.
+2025-08-17 14:32:26.392 | INFO     | __main__:main:50 - 💰 Price: $320000.00 → $518158.20
+2025-08-17 14:32:26.392 | INFO     | __main__:main:51 - 📈 Profit: $198153.20 (38.2%)
+2025-08-17 14:32:26.392 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:32:26.392 | INFO     | __main__:main:57 -    • Diseño moderno y elegante que se adapta a cualquier decoración.
+2025-08-17 14:32:26.392 | INFO     | __main__:main:57 -    • Construcción duradera con materiales de alta calidad: plástico y metal.
+2025-08-17 14:32:26.392 | INFO     | __main__:main:57 -    • Dimensiones perfectas para visibilidad y estilo: 28x28x4 cm.
+2025-08-17 14:32:26.392 | INFO     | __main__:main:57 -    • Fácil instalación para disfrutar sin complicaciones.
+2025-08-17 14:32:26.393 | INFO     | __main__:main:59 - 🖼️  Image: https://tienda.pequenomundo.com/media/catalog/product/cache/97837f0f40e684471336b3d88405bc12/0/7/07065596_01.jpg
+2025-08-17 14:32:26.393 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:32:26.393 | INFO     | __main__:main:43 - 🆔 Product #2
+2025-08-17 14:32:26.393 | INFO     | __main__:main:44 - 📦 Original: Reloj de mesa con cargador
+2025-08-17 14:32:26.393 | INFO     | __main__:main:45 - 🏷️  Rebranded: Estación Elegante: Reloj y Cargador
+2025-08-17 14:32:26.393 | INFO     | __main__:main:46 - 💬 Description: Descubre 'Estación Elegante', la fusión perfecta de utilidad y sofisticación para tu hogar u oficina. Este reloj de mesa no solo te mantiene al tanto del tiempo, sino que también carga tus dispositivos con su integración de cargador inalámbrico, manteniendo tu espacio libre de cables y tu día productivo.
+2025-08-17 14:32:26.393 | INFO     | __main__:main:50 - 💰 Price: $780000.00 → $1293061.04
+2025-08-17 14:32:26.393 | INFO     | __main__:main:51 - 📈 Profit: $513056.04 (39.7%)
+2025-08-17 14:32:26.393 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:32:26.393 | INFO     | __main__:main:57 -    • Diseño moderno y minimalista que complementa cualquier decoración
+2025-08-17 14:32:26.393 | INFO     | __main__:main:57 -    • Cargador inalámbrico integrado compatible con dispositivos habilitados para Qi
+2025-08-17 14:32:26.393 | INFO     | __main__:main:57 -    • Pantalla de tiempo LED clara y visible desde cualquier ángulo
+2025-08-17 14:32:26.393 | INFO     | __main__:main:57 -    • Construcción ligera pero robusta, ideal para cualquier espacio de trabajo o vivienda
+2025-08-17 14:32:26.393 | INFO     | __main__:main:57 -    • Fácil de usar, con una configuración intuitiva y sin complicaciones
+2025-08-17 14:32:26.393 | INFO     | __main__:main:59 - 🖼️  Image: https://tienda.pequenomundo.com/media/catalog/product/cache/97837f0f40e684471336b3d88405bc12/1/0/10030366_01.jpg
+2025-08-17 14:32:26.393 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:32:26.393 | INFO     | __main__:main:43 - 🆔 Product #3
+2025-08-17 14:32:26.393 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y vidrio 25.4x25.4x4cm
+2025-08-17 14:32:26.393 | INFO     | __main__:main:45 - 🏷️  Rebranded: Tiempo Elegante
+2025-08-17 14:32:26.394 | INFO     | __main__:main:46 - 💬 Description: Descubre la elegancia y precisión en cada momento con 'Tiempo Elegante', un reloj de pared único que combina diseño moderno con la funcionalidad que tu hogar merece. Fabricado con materiales de alta calidad, su fusión de plástico resistente y vidrio fino aporta un toque de distinción a cualquier espacio.
+2025-08-17 14:32:26.394 | INFO     | __main__:main:50 - 💰 Price: $230000.00 → $384811.57
+2025-08-17 14:32:26.394 | INFO     | __main__:main:51 - 📈 Profit: $154806.57 (40.2%)
+2025-08-17 14:32:26.394 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:32:26.394 | INFO     | __main__:main:57 -    • Diseño moderno y elegante, perfecto para cualquier habitación.
+2025-08-17 14:32:26.394 | INFO     | __main__:main:57 -    • Materiales de alta calidad para durabilidad: plástico resistente y vidrio fino.
+2025-08-17 14:32:26.394 | INFO     | __main__:main:57 -    • Dimensiones óptimas de 25.4x25.4x4cm, ideal para visibilidad y estilo.
+2025-08-17 14:32:26.394 | INFO     | __main__:main:59 - 🖼️  Image: https://tienda.pequenomundo.com/media/catalog/product/cache/97837f0f40e684471336b3d88405bc12/0/7/07065438_01.jpg
+2025-08-17 14:32:26.394 | INFO     | __main__:main:63 - 
+📊 Summary:
+2025-08-17 14:32:26.394 | INFO     | __main__:main:64 - Total Products: 3
+2025-08-17 14:32:26.394 | INFO     | __main__:main:65 - Total Cost: $1330000.00
+2025-08-17 14:32:26.394 | INFO     | __main__:main:66 - Total Revenue: $2196030.81
+2025-08-17 14:32:26.394 | INFO     | __main__:main:67 - Total Profit: $866030.81
+2025-08-17 14:32:26.394 | INFO     | __main__:main:68 - Avg. Profit Margin: 39.4%
+2025-08-17 14:32:26.394 | INFO     | __main__:main:76 - 
+🏁 Workflow completed!
+2025-08-17 14:32:48.242 | INFO     | __main__:main:15 - 🚀 Starting Shaymee E-commerce Automation Workflow
+2025-08-17 14:32:48.283 | INFO     | __main__:main:28 - 🔍 Searching for: Relojes
+2025-08-17 14:32:48.286 | INFO     | integrations.pequeno_mundo_client:get_products:12 - Starting scraper for Pequeño Mundo with search term: 'Relojes'
+2025-08-17 14:32:49.878 | INFO     | integrations.pequeno_mundo_client:get_products:22 - Navigating to: https://tienda.pequenomundo.com/catalogsearch/result/?q=Relojes
+2025-08-17 14:32:52.584 | INFO     | integrations.pequeno_mundo_client:get_products:30 - Accepted cookies
+2025-08-17 14:32:54.750 | INFO     | integrations.pequeno_mundo_client:get_products:38 - Screenshot saved to debug_screenshot.png
+2025-08-17 14:32:54.759 | INFO     | integrations.pequeno_mundo_client:get_products:44 - Page HTML saved to page_content.html
+2025-08-17 14:32:54.759 | INFO     | integrations.pequeno_mundo_client:get_products:47 - Waiting for any product elements to appear...
+2025-08-17 14:32:54.771 | INFO     | integrations.pequeno_mundo_client:get_products:58 - Found 4 products
+2025-08-17 14:32:55.085 | INFO     | __main__:main:36 - 🎨 Processing products with AI...
+2025-08-17 14:33:00.023 | INFO     | integrations.product_rebrander:process_product_image:197 - ✅ Created branded image: /Users/jcubero/Documents/Shaimee/processed_images/Relojes/20250817_143259/Tiempo_Elegante.jpg
+2025-08-17 14:33:00.434 | INFO     | integrations.product_rebrander:process_product_image:197 - ✅ Created branded image: /Users/jcubero/Documents/Shaimee/processed_images/Relojes/20250817_143300/Estación_TempoCarga.jpg
+2025-08-17 14:33:02.661 | INFO     | integrations.product_rebrander:process_product_image:197 - ✅ Created branded image: /Users/jcubero/Documents/Shaimee/processed_images/Relojes/20250817_143302/Tiempo_Elegante.jpg
+2025-08-17 14:33:02.662 | SUCCESS  | __main__:main:40 - 
+✨ Rebranding Complete! Here are your products:
+2025-08-17 14:33:02.662 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:33:02.662 | INFO     | __main__:main:43 - 🆔 Product #1
+2025-08-17 14:33:02.662 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y metal 28x28x4cm
+2025-08-17 14:33:02.662 | INFO     | __main__:main:45 - 🏷️  Rebranded: Tiempo Elegante
+2025-08-17 14:33:02.662 | INFO     | __main__:main:46 - 💬 Description: Descubre 'Tiempo Elegante', un reloj de pared que combina la modernidad del metal con la ligereza del plástico en un diseño sofisticado de 28x28x4cm. Perfecto para añadir un toque de elegancia y funcionalidad a cualquier espacio.
+2025-08-17 14:33:02.662 | INFO     | __main__:main:50 - 💰 Price: $320000.00 → $488742.82
+2025-08-17 14:33:02.662 | INFO     | __main__:main:51 - 📈 Profit: $168737.82 (34.5%)
+2025-08-17 14:33:02.662 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:33:02.662 | INFO     | __main__:main:57 -    • Diseño moderno y elegante que complementa cualquier decoración
+2025-08-17 14:33:02.662 | INFO     | __main__:main:57 -    • Construcción duradera con materiales de alta calidad: plástico y metal
+2025-08-17 14:33:02.663 | INFO     | __main__:main:57 -    • Dimensiones perfectas para visibilidad y estilo: 28x28x4cm
+2025-08-17 14:33:02.663 | INFO     | __main__:main:57 -    • Mecanismo de relojería preciso para mantener la hora exacta
+2025-08-17 14:33:02.663 | INFO     | __main__:main:59 - 🖼️  Image: /Users/jcubero/Documents/Shaimee/processed_images/Relojes/20250817_143259/Tiempo_Elegante.jpg
+2025-08-17 14:33:02.663 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:33:02.663 | INFO     | __main__:main:43 - 🆔 Product #2
+2025-08-17 14:33:02.663 | INFO     | __main__:main:44 - 📦 Original: Reloj de mesa con cargador
+2025-08-17 14:33:02.663 | INFO     | __main__:main:45 - 🏷️  Rebranded: Estación TempoCarga
+2025-08-17 14:33:02.663 | INFO     | __main__:main:46 - 💬 Description: Descubre Estación TempoCarga, la fusión perfecta entre elegancia y funcionalidad. Este reloj de mesa no solo mide el tiempo con precisión, sino que también sirve como un eficiente cargador para tus dispositivos, manteniéndolos siempre listos para la acción.
+2025-08-17 14:33:02.663 | INFO     | __main__:main:50 - 💰 Price: $780000.00 → $1258676.34
+2025-08-17 14:33:02.663 | INFO     | __main__:main:51 - 📈 Profit: $478671.34 (38.0%)
+2025-08-17 14:33:02.663 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:33:02.663 | INFO     | __main__:main:57 -    • Diseño elegante que complementa cualquier espacio
+2025-08-17 14:33:02.663 | INFO     | __main__:main:57 -    • Carga tus dispositivos de manera rápida y segura
+2025-08-17 14:33:02.663 | INFO     | __main__:main:57 -    • Visualización clara y precisa del tiempo
+2025-08-17 14:33:02.663 | INFO     | __main__:main:57 -    • Compacto y fácil de ubicar en cualquier mesa o escritorio
+2025-08-17 14:33:02.663 | INFO     | __main__:main:59 - 🖼️  Image: /Users/jcubero/Documents/Shaimee/processed_images/Relojes/20250817_143300/Estación_TempoCarga.jpg
+2025-08-17 14:33:02.663 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:33:02.663 | INFO     | __main__:main:43 - 🆔 Product #3
+2025-08-17 14:33:02.663 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y vidrio 25.4x25.4x4cm
+2025-08-17 14:33:02.663 | INFO     | __main__:main:45 - 🏷️  Rebranded: Tiempo Elegante
+2025-08-17 14:33:02.663 | INFO     | __main__:main:46 - 💬 Description: Descubre la elegancia y funcionalidad con 'Tiempo Elegante', el reloj de pared que combina diseño moderno con precisión y durabilidad. Perfecto para embellecer cualquier espacio, desde la oficina hasta el hogar, con un toque de sofisticación.
+2025-08-17 14:33:02.663 | INFO     | __main__:main:50 - 💰 Price: $230000.00 → $378078.40
+2025-08-17 14:33:02.663 | INFO     | __main__:main:51 - 📈 Profit: $148073.40 (39.2%)
+2025-08-17 14:33:02.663 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:33:02.663 | INFO     | __main__:main:57 -    • Diseño moderno con acabados de alta calidad en plástico y vidrio.
+2025-08-17 14:33:02.663 | INFO     | __main__:main:57 -    • Dimensiones perfectas de 25.4x25.4x4 cm para cualquier espacio.
+2025-08-17 14:33:02.664 | INFO     | __main__:main:57 -    • Mecanismo de alta precisión para mantener la hora exacta.
+2025-08-17 14:33:02.664 | INFO     | __main__:main:59 - 🖼️  Image: /Users/jcubero/Documents/Shaimee/processed_images/Relojes/20250817_143302/Tiempo_Elegante.jpg
+2025-08-17 14:33:02.664 | INFO     | __main__:main:63 - 
+📊 Summary:
+2025-08-17 14:33:02.664 | INFO     | __main__:main:64 - Total Products: 3
+2025-08-17 14:33:02.664 | INFO     | __main__:main:65 - Total Cost: $1330000.00
+2025-08-17 14:33:02.664 | INFO     | __main__:main:66 - Total Revenue: $2125497.56
+2025-08-17 14:33:02.664 | INFO     | __main__:main:67 - Total Profit: $795497.56
+2025-08-17 14:33:02.664 | INFO     | __main__:main:68 - Avg. Profit Margin: 37.4%
+2025-08-17 14:33:02.664 | INFO     | __main__:main:76 - 
+🏁 Workflow completed!
+2025-08-17 14:37:49.730 | INFO     | __main__:main:15 - 🚀 Starting Shaymee E-commerce Automation Workflow
+2025-08-17 14:37:49.775 | INFO     | __main__:main:28 - 🔍 Searching for: Relojes
+2025-08-17 14:37:49.775 | INFO     | integrations.pequeno_mundo_client:get_products:12 - Starting scraper for Pequeño Mundo with search term: 'Relojes'
+2025-08-17 14:37:52.059 | INFO     | integrations.pequeno_mundo_client:get_products:22 - Navigating to: https://tienda.pequenomundo.com/catalogsearch/result/?q=Relojes
+2025-08-17 14:37:54.870 | INFO     | integrations.pequeno_mundo_client:get_products:30 - Accepted cookies
+2025-08-17 14:37:57.040 | INFO     | integrations.pequeno_mundo_client:get_products:38 - Screenshot saved to debug_screenshot.png
+2025-08-17 14:37:57.049 | INFO     | integrations.pequeno_mundo_client:get_products:44 - Page HTML saved to page_content.html
+2025-08-17 14:37:57.049 | INFO     | integrations.pequeno_mundo_client:get_products:47 - Waiting for any product elements to appear...
+2025-08-17 14:37:57.058 | INFO     | integrations.pequeno_mundo_client:get_products:58 - Found 4 products
+2025-08-17 14:37:57.361 | INFO     | __main__:main:36 - 🎨 Processing products with AI...
+2025-08-17 14:38:03.427 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_pared_plástico_y_metal_28x28x4cm.jpg
+2025-08-17 14:38:03.427 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/Relojes/20250817_143803/Tiempo_Elegante.jpg
+2025-08-17 14:38:04.529 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_pared_plástico_y_vidrio_25_4x25_4x4cm.jpg
+2025-08-17 14:38:04.529 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/Relojes/20250817_143804/Tiempo_Elegante.jpg
+2025-08-17 14:38:04.543 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_de_mesa_con_cargador.jpg
+2025-08-17 14:38:04.543 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/Relojes/20250817_143804/Estación_TiempoElegante.jpg
+2025-08-17 14:38:04.544 | SUCCESS  | __main__:main:40 - 
+✨ Rebranding Complete! Here are your products:
+2025-08-17 14:38:04.544 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:38:04.544 | INFO     | __main__:main:43 - 🆔 Product #1
+2025-08-17 14:38:04.544 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y metal 28x28x4cm
+2025-08-17 14:38:04.544 | INFO     | __main__:main:45 - 🏷️  Rebranded: Tiempo Elegante
+2025-08-17 14:38:04.544 | INFO     | __main__:main:46 - 💬 Description: Descubre la perfección y elegancia con 'Tiempo Elegante', un reloj de pared que combina la durabilidad del metal con la ligereza del plástico en un diseño sofisticado de 28x28x4cm. Ideal para realzar cualquier espacio en tu hogar u oficina con un toque de modernidad y estilo.
+2025-08-17 14:38:04.544 | INFO     | __main__:main:50 - 💰 Price: $320000.00 → $500752.10
+2025-08-17 14:38:04.544 | INFO     | __main__:main:51 - 📈 Profit: $180747.10 (36.1%)
+2025-08-17 14:38:04.544 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:38:04.544 | INFO     | __main__:main:57 -    • Diseño moderno y sofisticado que combina con cualquier decoración.
+2025-08-17 14:38:04.544 | INFO     | __main__:main:57 -    • Fabricación con materiales de primera calidad: plástico resistente y metal duradero.
+2025-08-17 14:38:04.544 | INFO     | __main__:main:57 -    • Dimensiones perfectas para visibilidad y estilo, sin sobrecargar el espacio.
+2025-08-17 14:38:04.544 | INFO     | __main__:main:59 - 🖼️  Image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_pared_plástico_y_metal_28x28x4cm.jpg
+2025-08-17 14:38:04.544 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:38:04.544 | INFO     | __main__:main:43 - 🆔 Product #2
+2025-08-17 14:38:04.544 | INFO     | __main__:main:44 - 📦 Original: Reloj de mesa con cargador
+2025-08-17 14:38:04.544 | INFO     | __main__:main:45 - 🏷️  Rebranded: Estación TiempoElegante
+2025-08-17 14:38:04.544 | INFO     | __main__:main:46 - 💬 Description: Estación TiempoElegante combina la utilidad de un reloj de mesa con la innovación de un cargador inalámbrico, diseñado para quienes valoran la funcionalidad y el estilo. Perfecto para mantener tus dispositivos cargados mientras mantienes el tiempo a la vista.
+2025-08-17 14:38:04.545 | INFO     | __main__:main:50 - 💰 Price: $780000.00 → $1161393.66
+2025-08-17 14:38:04.545 | INFO     | __main__:main:51 - 📈 Profit: $381388.66 (32.8%)
+2025-08-17 14:38:04.545 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:38:04.545 | INFO     | __main__:main:57 -    • Cargador inalámbrico integrado para mantener tus dispositivos siempre listos
+2025-08-17 14:38:04.545 | INFO     | __main__:main:57 -    • Diseño elegante que complementa cualquier espacio de trabajo o hogar
+2025-08-17 14:38:04.545 | INFO     | __main__:main:57 -    • Visualización de tiempo precisa y fácil de leer
+2025-08-17 14:38:04.545 | INFO     | __main__:main:57 -    • Fácil de usar, con solo colocar tu dispositivo sobre la base para iniciar la carga
+2025-08-17 14:38:04.545 | INFO     | __main__:main:59 - 🖼️  Image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_de_mesa_con_cargador.jpg
+2025-08-17 14:38:04.545 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:38:04.545 | INFO     | __main__:main:43 - 🆔 Product #3
+2025-08-17 14:38:04.545 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y vidrio 25.4x25.4x4cm
+2025-08-17 14:38:04.545 | INFO     | __main__:main:45 - 🏷️  Rebranded: Tiempo Elegante
+2025-08-17 14:38:04.545 | INFO     | __main__:main:46 - 💬 Description: Descubre la combinación perfecta de funcionalidad y estilo con Tiempo Elegante, un reloj de pared que destaca por su diseño moderno con acabados en plástico y vidrio. Perfecto para agregar un toque sofisticado a cualquier espacio en tu hogar u oficina.
+2025-08-17 14:38:04.545 | INFO     | __main__:main:50 - 💰 Price: $230000.00 → $370383.51
+2025-08-17 14:38:04.545 | INFO     | __main__:main:51 - 📈 Profit: $140378.51 (37.9%)
+2025-08-17 14:38:04.546 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:38:04.546 | INFO     | __main__:main:57 -    • Diseño moderno y minimalista, ideal para cualquier decoración
+2025-08-17 14:38:04.546 | INFO     | __main__:main:57 -    • Materiales de alta calidad, combinando plástico resistente con vidrio elegante
+2025-08-17 14:38:04.546 | INFO     | __main__:main:57 -    • Dimensiones perfectas de 25.4x25.4x4cm para una visualización clara y precisa
+2025-08-17 14:38:04.546 | INFO     | __main__:main:59 - 🖼️  Image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_pared_plástico_y_vidrio_25_4x25_4x4cm.jpg
+2025-08-17 14:38:04.546 | INFO     | __main__:main:63 - 
+📊 Summary:
+2025-08-17 14:38:04.546 | INFO     | __main__:main:64 - Total Products: 3
+2025-08-17 14:38:04.546 | INFO     | __main__:main:65 - Total Cost: $1330000.00
+2025-08-17 14:38:04.546 | INFO     | __main__:main:66 - Total Revenue: $2032529.27
+2025-08-17 14:38:04.546 | INFO     | __main__:main:67 - Total Profit: $702529.27
+2025-08-17 14:38:04.546 | INFO     | __main__:main:68 - Avg. Profit Margin: 34.6%
+2025-08-17 14:38:04.546 | INFO     | __main__:main:76 - 
+🏁 Workflow completed!
+2025-08-17 14:47:37.919 | INFO     | __main__:main:15 - 🚀 Starting Shaymee E-commerce Automation Workflow
+2025-08-17 14:47:37.964 | INFO     | __main__:main:28 - 🔍 Searching for: Relojes
+2025-08-17 14:47:37.964 | INFO     | integrations.pequeno_mundo_client:get_products:12 - Starting scraper for Pequeño Mundo with search term: 'Relojes'
+2025-08-17 14:47:40.025 | INFO     | integrations.pequeno_mundo_client:get_products:22 - Navigating to: https://tienda.pequenomundo.com/catalogsearch/result/?q=Relojes
+2025-08-17 14:47:43.495 | INFO     | integrations.pequeno_mundo_client:get_products:30 - Accepted cookies
+2025-08-17 14:47:45.664 | INFO     | integrations.pequeno_mundo_client:get_products:38 - Screenshot saved to debug_screenshot.png
+2025-08-17 14:47:45.673 | INFO     | integrations.pequeno_mundo_client:get_products:44 - Page HTML saved to page_content.html
+2025-08-17 14:47:45.673 | INFO     | integrations.pequeno_mundo_client:get_products:47 - Waiting for product grid to appear...
+2025-08-17 14:47:45.682 | INFO     | integrations.pequeno_mundo_client:get_products:51 - Searching for product elements...
+2025-08-17 14:47:45.935 | INFO     | integrations.pequeno_mundo_client:get_products:87 - Found 4 products using multiple selectors
+2025-08-17 14:47:45.935 | INFO     | integrations.pequeno_mundo_client:get_products:105 - Found 4 products
+2025-08-17 14:47:46.157 | INFO     | __main__:main:36 - 🎨 Processing products with AI...
+2025-08-17 14:47:53.264 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_de_mesa_con_cargador.jpg
+2025-08-17 14:47:53.265 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/Relojes/20250817_144753/Estación_Elegante.jpg
+2025-08-17 14:47:53.274 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_pared_plástico_y_metal_28x28x4cm.jpg
+2025-08-17 14:47:53.274 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/Relojes/20250817_144753/Tiempo_Elegante.jpg
+2025-08-17 14:47:53.961 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_pared_plástico_y_vidrio_25_4x25_4x4cm.jpg
+2025-08-17 14:47:53.961 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/Relojes/20250817_144753/TempoElegante_25.jpg
+2025-08-17 14:47:53.962 | SUCCESS  | __main__:main:40 - 
+✨ Rebranding Complete! Here are your products:
+2025-08-17 14:47:53.962 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:47:53.962 | INFO     | __main__:main:43 - 🆔 Product #1
+2025-08-17 14:47:53.962 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y metal 28x28x4cm
+2025-08-17 14:47:53.962 | INFO     | __main__:main:45 - 🏷️  Rebranded: Tiempo Elegante
+2025-08-17 14:47:53.962 | INFO     | __main__:main:46 - 💬 Description: Descubre 'Tiempo Elegante', un reloj de pared que combina la modernidad del metal con la ligereza del plástico, diseñado para enriquecer cualquier espacio con su presencia. Con dimensiones perfectas de 28x28x4cm, se adapta armoniosamente a tu hogar u oficina, aportando un toque de sofisticación y funcionalidad.
+2025-08-17 14:47:53.962 | INFO     | __main__:main:50 - 💰 Price: $320000.00 → $471345.49
+2025-08-17 14:47:53.962 | INFO     | __main__:main:51 - 📈 Profit: $151340.49 (32.1%)
+2025-08-17 14:47:53.962 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:47:53.962 | INFO     | __main__:main:57 -    • Diseño moderno y elegante que combina con cualquier decoración
+2025-08-17 14:47:53.962 | INFO     | __main__:main:57 -    • Materiales de alta calidad para una durabilidad asegurada
+2025-08-17 14:47:53.962 | INFO     | __main__:main:57 -    • Tamaño perfecto para visibilidad y adaptabilidad
+2025-08-17 14:47:53.962 | INFO     | __main__:main:57 -    • Mecanismo silencioso para un ambiente tranquilo
+2025-08-17 14:47:53.962 | INFO     | __main__:main:59 - 🖼️  Image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_pared_plástico_y_metal_28x28x4cm.jpg
+2025-08-17 14:47:53.962 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:47:53.962 | INFO     | __main__:main:43 - 🆔 Product #2
+2025-08-17 14:47:53.963 | INFO     | __main__:main:44 - 📦 Original: Reloj de mesa con cargador
+2025-08-17 14:47:53.963 | INFO     | __main__:main:45 - 🏷️  Rebranded: Estación Elegante
+2025-08-17 14:47:53.963 | INFO     | __main__:main:46 - 💬 Description: Descubre la fusión perfecta de utilidad y estilo con Estación Elegante, un reloj de mesa que no solo embellece tu espacio sino que también sirve como cargador. Diseñado para los amantes de la funcionalidad sin comprometer la estética.
+2025-08-17 14:47:53.963 | INFO     | __main__:main:50 - 💰 Price: $780000.00 → $1267965.06
+2025-08-17 14:47:53.963 | INFO     | __main__:main:51 - 📈 Profit: $487960.06 (38.5%)
+2025-08-17 14:47:53.963 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:47:53.963 | INFO     | __main__:main:57 -    • Carga inalámbrica rápida y eficiente para mantener tus dispositivos siempre listos.
+2025-08-17 14:47:53.963 | INFO     | __main__:main:57 -    • Diseño moderno y minimalista que complementa cualquier decoración.
+2025-08-17 14:47:53.963 | INFO     | __main__:main:57 -    • Visualización clara del tiempo con ajustes de brillo para un confort visual óptimo.
+2025-08-17 14:47:53.963 | INFO     | __main__:main:57 -    • Construcción duradera y de alta calidad para una larga vida útil.
+2025-08-17 14:47:53.963 | INFO     | __main__:main:59 - 🖼️  Image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_de_mesa_con_cargador.jpg
+2025-08-17 14:47:53.963 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:47:53.963 | INFO     | __main__:main:43 - 🆔 Product #3
+2025-08-17 14:47:53.963 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y vidrio 25.4x25.4x4cm
+2025-08-17 14:47:53.963 | INFO     | __main__:main:45 - 🏷️  Rebranded: TempoElegante 25
+2025-08-17 14:47:53.963 | INFO     | __main__:main:46 - 💬 Description: Descubre la perfecta combinación de funcionalidad y estilo con TempoElegante 25. Diseñado meticulosamente para embellecer cualquier espacio, este reloj de pared no solo te ofrece la hora precisa, sino también un toque de elegancia moderna con su sofisticada fusión de plástico y vidrio.
+2025-08-17 14:47:53.963 | INFO     | __main__:main:50 - 💰 Price: $230000.00 → $377247.25
+2025-08-17 14:47:53.963 | INFO     | __main__:main:51 - 📈 Profit: $147242.25 (39.0%)
+2025-08-17 14:47:53.963 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:47:53.963 | INFO     | __main__:main:57 -    • Diseño moderno y elegante que complementa cualquier decoración
+2025-08-17 14:47:53.963 | INFO     | __main__:main:57 -    • Materiales de alta calidad para una durabilidad excepcional
+2025-08-17 14:47:53.963 | INFO     | __main__:main:57 -    • Dimensiones perfectas de 25.4x25.4x4 cm para una visibilidad óptima
+2025-08-17 14:47:53.963 | INFO     | __main__:main:57 -    • Fácil instalación en cualquier espacio interior
+2025-08-17 14:47:53.963 | INFO     | __main__:main:59 - 🖼️  Image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_pared_plástico_y_vidrio_25_4x25_4x4cm.jpg
+2025-08-17 14:47:53.963 | INFO     | __main__:main:63 - 
+📊 Summary:
+2025-08-17 14:47:53.963 | INFO     | __main__:main:64 - Total Products: 3
+2025-08-17 14:47:53.964 | INFO     | __main__:main:65 - Total Cost: $1330000.00
+2025-08-17 14:47:53.964 | INFO     | __main__:main:66 - Total Revenue: $2116557.80
+2025-08-17 14:47:53.964 | INFO     | __main__:main:67 - Total Profit: $786557.80
+2025-08-17 14:47:53.964 | INFO     | __main__:main:68 - Avg. Profit Margin: 37.2%
+2025-08-17 14:47:53.964 | INFO     | __main__:main:76 - 
+🏁 Workflow completed!
+2025-08-17 14:48:22.401 | INFO     | __main__:main:15 - 🚀 Starting Shaymee E-commerce Automation Workflow
+2025-08-17 14:48:22.440 | INFO     | __main__:main:28 - 🔍 Searching for: Relojes
+2025-08-17 14:48:22.440 | INFO     | integrations.pequeno_mundo_client:get_products:12 - Starting scraper for Pequeño Mundo with search term: 'Relojes'
+2025-08-17 14:48:24.322 | INFO     | integrations.pequeno_mundo_client:get_products:22 - Navigating to: https://tienda.pequenomundo.com/catalogsearch/result/?q=Relojes
+2025-08-17 14:48:27.229 | INFO     | integrations.pequeno_mundo_client:get_products:30 - Accepted cookies
+2025-08-17 14:48:29.364 | INFO     | integrations.pequeno_mundo_client:get_products:38 - Screenshot saved to debug_screenshot.png
+2025-08-17 14:48:29.373 | INFO     | integrations.pequeno_mundo_client:get_products:44 - Page HTML saved to page_content.html
+2025-08-17 14:48:29.373 | INFO     | integrations.pequeno_mundo_client:get_products:47 - Waiting for product grid to appear...
+2025-08-17 14:48:29.394 | INFO     | integrations.pequeno_mundo_client:get_products:54 - Saved debug_page.html for inspection
+2025-08-17 14:48:29.394 | INFO     | integrations.pequeno_mundo_client:get_products:57 - Searching for product elements...
+2025-08-17 14:48:29.749 | INFO     | integrations.pequeno_mundo_client:get_products:105 - Selector statistics: {'.product-item': 4, '.item.product': 4, '.product-item-info': 4, '.product-items > li': 4, '.product-list > li': 0, '.products-grid .item': 4, '.products.list .item': 4, '[data-product-id]': 4, '.product-item-details': 4, '.product.details': 4}
+2025-08-17 14:48:29.749 | INFO     | integrations.pequeno_mundo_client:get_products:106 - Found 4 unique product links
+2025-08-17 14:48:29.749 | INFO     | integrations.pequeno_mundo_client:get_products:108 - Found 4 products using multiple selectors
+2025-08-17 14:48:29.749 | INFO     | integrations.pequeno_mundo_client:get_products:126 - Found 4 products
+2025-08-17 14:48:29.965 | INFO     | __main__:main:36 - 🎨 Processing products with AI...
+2025-08-17 14:48:34.884 | INFO     | integrations.product_rebrander:process_product_image:111 - 🔄 Using cached image for 'Reloj pared plástico y vidrio 25.4x25.4x4cm': /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_pared_plástico_y_vidrio_25_4x25_4x4cm.jpg
+2025-08-17 14:48:34.959 | INFO     | integrations.product_rebrander:process_product_image:111 - 🔄 Using cached image for 'Reloj pared plástico y metal 28x28x4cm': /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_pared_plástico_y_metal_28x28x4cm.jpg
+2025-08-17 14:48:35.280 | INFO     | integrations.product_rebrander:process_product_image:111 - 🔄 Using cached image for 'Reloj de mesa con cargador': /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_de_mesa_con_cargador.jpg
+2025-08-17 14:48:35.281 | SUCCESS  | __main__:main:40 - 
+✨ Rebranding Complete! Here are your products:
+2025-08-17 14:48:35.281 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:48:35.281 | INFO     | __main__:main:43 - 🆔 Product #1
+2025-08-17 14:48:35.281 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y metal 28x28x4cm
+2025-08-17 14:48:35.281 | INFO     | __main__:main:45 - 🏷️  Rebranded: Tiempo Moderno
+2025-08-17 14:48:35.281 | INFO     | __main__:main:46 - 💬 Description: Tiempo Moderno, más que un reloj de pared, es una pieza de diseño único para tu hogar. Combina elegancia y funcionalidad con su marco de plástico y metal, perfecto para cualquier espacio.
+2025-08-17 14:48:35.282 | INFO     | __main__:main:50 - 💰 Price: $320000.00 → $527522.85
+2025-08-17 14:48:35.282 | INFO     | __main__:main:51 - 📈 Profit: $207517.85 (39.3%)
+2025-08-17 14:48:35.282 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:48:35.282 | INFO     | __main__:main:57 -    • Diseño elegante y contemporáneo que combina con cualquier decoración.
+2025-08-17 14:48:35.282 | INFO     | __main__:main:57 -    • Materiales de alta calidad para durabilidad: marco de plástico con detalles en metal.
+2025-08-17 14:48:35.282 | INFO     | __main__:main:57 -    • Dimensiones perfectas de 28x28x4 cm para visibilidad y adaptabilidad en cualquier pared.
+2025-08-17 14:48:35.282 | INFO     | __main__:main:59 - 🖼️  Image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_pared_plástico_y_metal_28x28x4cm.jpg
+2025-08-17 14:48:35.282 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:48:35.282 | INFO     | __main__:main:43 - 🆔 Product #2
+2025-08-17 14:48:35.282 | INFO     | __main__:main:44 - 📦 Original: Reloj de mesa con cargador
+2025-08-17 14:48:35.282 | INFO     | __main__:main:45 - 🏷️  Rebranded: Estación Tempo Elegante
+2025-08-17 14:48:35.283 | INFO     | __main__:main:46 - 💬 Description: Eleva la elegancia de tu espacio con la Estación Tempo Elegante, un reloj de mesa que integra la funcionalidad de un cargador. Diseñado pensando en la sofisticación y la comodidad, es el complemento perfecto para cualquier escritorio o mesita de noche.
+2025-08-17 14:48:35.283 | INFO     | __main__:main:50 - 💰 Price: $780000.00 → $1240867.16
+2025-08-17 14:48:35.283 | INFO     | __main__:main:51 - 📈 Profit: $460862.16 (37.1%)
+2025-08-17 14:48:35.283 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:48:35.283 | INFO     | __main__:main:57 -    • Diseño moderno y elegante que complementa cualquier decoración
+2025-08-17 14:48:35.283 | INFO     | __main__:main:57 -    • Cargador integrado para mantener tus dispositivos siempre listos
+2025-08-17 14:48:35.283 | INFO     | __main__:main:57 -    • Visualización clara de la hora para una máxima conveniencia
+2025-08-17 14:48:35.283 | INFO     | __main__:main:57 -    • Construcción duradera y de alta calidad
+2025-08-17 14:48:35.283 | INFO     | __main__:main:59 - 🖼️  Image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_de_mesa_con_cargador.jpg
+2025-08-17 14:48:35.283 | INFO     | __main__:main:42 - 
+============================================================
+2025-08-17 14:48:35.283 | INFO     | __main__:main:43 - 🆔 Product #3
+2025-08-17 14:48:35.284 | INFO     | __main__:main:44 - 📦 Original: Reloj pared plástico y vidrio 25.4x25.4x4cm
+2025-08-17 14:48:35.284 | INFO     | __main__:main:45 - 🏷️  Rebranded: TempoElegante
+2025-08-17 14:48:35.284 | INFO     | __main__:main:46 - 💬 Description: Descubre la elegancia atemporal con TempoElegante, un reloj de pared que combina perfectamente diseño moderno con funcionalidad. Su marco de plástico duradero y frente de vidrio cristalino te aseguran precisión y estilo en cada mirada.
+2025-08-17 14:48:35.284 | INFO     | __main__:main:50 - 💰 Price: $230000.00 → $362284.79
+2025-08-17 14:48:35.284 | INFO     | __main__:main:51 - 📈 Profit: $132279.79 (36.5%)
+2025-08-17 14:48:35.284 | INFO     | __main__:main:55 - 
+🌟 Key Features:
+2025-08-17 14:48:35.284 | INFO     | __main__:main:57 -    • Diseño moderno y minimalista que complementa cualquier espacio
+2025-08-17 14:48:35.284 | INFO     | __main__:main:57 -    • Construcción de plástico resistente con frente de vidrio para una visibilidad clara
+2025-08-17 14:48:35.284 | INFO     | __main__:main:57 -    • Dimensiones perfectas de 25.4x25.4x4cm para una presencia equilibrada en tu pared
+2025-08-17 14:48:35.284 | INFO     | __main__:main:59 - 🖼️  Image: /Users/jcubero/Documents/Shaimee/image_cache/relojes/reloj_pared_plástico_y_vidrio_25_4x25_4x4cm.jpg
+2025-08-17 14:48:35.284 | INFO     | __main__:main:63 - 
+📊 Summary:
+2025-08-17 14:48:35.284 | INFO     | __main__:main:64 - Total Products: 3
+2025-08-17 14:48:35.285 | INFO     | __main__:main:65 - Total Cost: $1330000.00
+2025-08-17 14:48:35.285 | INFO     | __main__:main:66 - Total Revenue: $2130674.80
+2025-08-17 14:48:35.285 | INFO     | __main__:main:67 - Total Profit: $800674.80
+2025-08-17 14:48:35.285 | INFO     | __main__:main:68 - Avg. Profit Margin: 37.6%
+2025-08-17 14:48:35.285 | INFO     | __main__:main:76 - 
+🏁 Workflow completed!
+2025-08-17 15:12:38.716 | INFO     | __main__:main:15 - 🚀 Starting Shaymee E-commerce Automation Workflow
+2025-08-17 15:12:38.754 | INFO     | __main__:main:28 - 🔍 Searching for: Relojes
+2025-08-17 15:12:38.754 | INFO     | integrations.pequeno_mundo_client:get_products:229 - Starting scraper for Pequeño Mundo with search term: 'Relojes'
+2025-08-17 15:12:38.754 | INFO     | integrations.pequeno_mundo_client:get_products_with_aiohttp:17 - Trying aiohttp method for search term: 'Relojes'
+2025-08-17 15:12:38.970 | ERROR    | integrations.pequeno_mundo_client:get_products_with_aiohttp:32 - HTTP 403 error from aiohttp method
+2025-08-17 15:12:38.971 | INFO     | integrations.pequeno_mundo_client:get_products:236 - Aiohttp failed, trying Playwright...
+2025-08-17 15:12:38.972 | INFO     | integrations.pequeno_mundo_client:get_products_with_playwright:45 - Starting Playwright scraper for search term: 'Relojes'
+2025-08-17 15:12:39.507 | ERROR    | integrations.pequeno_mundo_client:get_products_with_playwright:93 - Playwright method failed: BrowserType.launch: Executable doesn't exist at /Users/jcubero/Library/Caches/ms-playwright/chromium_headless_shell-1181/chrome-mac/headless_shell
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-08-17 15:12:39.507 | ERROR    | __main__:main:32 - ❌ No products found. Exiting...

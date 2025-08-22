@@ -1,0 +1,4 @@
+2025-08-02 20:45:56.505 | INFO     | integrations.temu_client:__init__:34 - TemuClient initialized in Scraping mode
+2025-08-02 20:45:56.940 | INFO     | integrations.temu_client:_create_order_simulation:247 - Simulated order created: temu_order_1754189156
+2025-08-02 20:46:05.313 | INFO     | integrations.temu_client:__init__:34 - TemuClient initialized in Scraping mode
+2025-08-02 20:46:23.832 | INFO     | integrations.temu_client:_create_order_simulation:247 - Simulated order created: temu_order_1754189183

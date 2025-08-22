@@ -1,0 +1,15 @@
+2025-08-02 20:56:02.379 | INFO     | integrations.correos_client:__init__:54 - CorreosClient initialized in Web Automation mode
+2025-08-02 20:56:02.379 | INFO     | integrations.sinpe_client:__init__:73 - SinpeClient initialized in Payment Link mode
+2025-08-02 20:56:02.880 | INFO     | integrations.correos_client:_create_pickup_order_web:138 - Simulating web pickup order creation for CR123456
+2025-08-02 20:56:03.882 | INFO     | integrations.correos_client:_get_tracking_info_web:194 - Simulating web tracking for CR123456
+2025-08-02 20:56:04.384 | INFO     | integrations.correos_client:_get_pickup_orders_web:320 - Simulating web pickup orders retrieval
+2025-08-02 20:56:04.885 | INFO     | integrations.correos_client:update_pickup_order_status:231 - Updating pickup order correos_pickup_1754189762 status to completed
+2025-08-02 20:56:05.387 | INFO     | integrations.correos_client:_update_pickup_order_status_web:268 - Simulated web update: Order correos_pickup_1754189762 -> completed
+2025-08-02 20:56:05.888 | INFO     | integrations.sinpe_client:_create_payment_link_simulation:161 - Simulating SINPE payment link creation for 25000.0 CRC
+2025-08-02 20:56:06.890 | INFO     | integrations.sinpe_client:_get_payment_status_simulation:250 - Simulating payment status for sinpe_1754189765
+2025-08-02 20:56:07.392 | INFO     | integrations.sinpe_client:_get_payment_history_simulation:371 - Simulating payment history retrieval
+2025-08-02 20:56:07.895 | INFO     | integrations.sinpe_client:cancel_payment:288 - Canceling payment sinpe_1754189765
+2025-08-02 20:56:08.396 | INFO     | integrations.sinpe_client:_cancel_payment_simulation:319 - Simulated payment cancellation for sinpe_1754189765
+2025-08-02 20:56:08.397 | INFO     | integrations.sinpe_client:_create_payment_link_simulation:161 - Simulating SINPE payment link creation for 45000 CRC
+2025-08-02 20:56:09.399 | INFO     | integrations.sinpe_client:_get_payment_status_simulation:250 - Simulating payment status for sinpe_1754189768
+2025-08-02 20:56:09.901 | INFO     | integrations.correos_client:_create_pickup_order_web:138 - Simulating web pickup order creation for CRORD-AUTO-001

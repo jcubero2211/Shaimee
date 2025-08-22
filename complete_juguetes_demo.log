@@ -1,0 +1,159 @@
+2025-08-17 15:21:32.003 | INFO     | __main__:demo_complete_rebranding:94 - 🎪 Starting COMPLETE Shaymee Toy Rebranding Demo
+2025-08-17 15:21:32.003 | INFO     | __main__:demo_complete_rebranding:95 - ======================================================================
+2025-08-17 15:21:32.040 | INFO     | __main__:demo_complete_rebranding:108 - 
+🎯 Processing category: EDUCATIVO
+2025-08-17 15:21:32.041 | INFO     | __main__:demo_complete_rebranding:109 - --------------------------------------------------
+2025-08-17 15:21:40.009 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/educativo/tablet_educativa_interactiva_para_niños_3_7_años.jpg
+2025-08-17 15:21:40.010 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/educativo/20250817_152140/AprendiTab__Aventuras_Educativ.jpg
+2025-08-17 15:21:40.067 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/educativo/microscopio_científico_infantil_con_accesorios.jpg
+2025-08-17 15:21:40.067 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/educativo/20250817_152140/ExploraLab__Microscopio_Junior.jpg
+2025-08-17 15:21:40.067 | SUCCESS  | __main__:demo_complete_rebranding:131 - ✅ Educativo: 2 toys processed
+2025-08-17 15:21:40.067 | INFO     | __main__:demo_complete_rebranding:134 -   1. AprendiTab: Aventuras Educativas
+2025-08-17 15:21:40.067 | INFO     | __main__:demo_complete_rebranding:135 -      Original: Tablet Educativa Interactiva para Niños 3-7 años
+2025-08-17 15:21:40.067 | INFO     | __main__:demo_complete_rebranding:136 -      Price: ₡28,500 → ₡48,284
+2025-08-17 15:21:40.067 | INFO     | __main__:demo_complete_rebranding:137 -      Profit: ₡19,779 (41.0%)
+2025-08-17 15:21:40.067 | INFO     | __main__:demo_complete_rebranding:141 -      Features: 4 destacadas
+2025-08-17 15:21:40.068 | INFO     | __main__:demo_complete_rebranding:145 -      🖼️  Image: ✅ Processed
+2025-08-17 15:21:40.068 | INFO     | __main__:demo_complete_rebranding:146 - 
+2025-08-17 15:21:40.068 | INFO     | __main__:demo_complete_rebranding:134 -   2. ExploraLab: Microscopio Junior Pro
+2025-08-17 15:21:40.068 | INFO     | __main__:demo_complete_rebranding:135 -      Original: Microscopio Científico Infantil con Accesorios
+2025-08-17 15:21:40.068 | INFO     | __main__:demo_complete_rebranding:136 -      Price: ₡22,750 → ₡36,391
+2025-08-17 15:21:40.068 | INFO     | __main__:demo_complete_rebranding:137 -      Profit: ₡13,637 (37.5%)
+2025-08-17 15:21:40.068 | INFO     | __main__:demo_complete_rebranding:141 -      Features: 4 destacadas
+2025-08-17 15:21:40.068 | INFO     | __main__:demo_complete_rebranding:145 -      🖼️  Image: ✅ Processed
+2025-08-17 15:21:40.068 | INFO     | __main__:demo_complete_rebranding:146 - 
+2025-08-17 15:21:40.068 | INFO     | __main__:demo_complete_rebranding:148 - 📊 Category Summary - Educativo:
+2025-08-17 15:21:40.068 | INFO     | __main__:demo_complete_rebranding:149 -    💰 Revenue: ₡84,675.29
+2025-08-17 15:21:40.068 | INFO     | __main__:demo_complete_rebranding:150 -    📈 Profit: ₡33,425.29 (39.5%)
+2025-08-17 15:21:40.068 | INFO     | __main__:demo_complete_rebranding:108 - 
+🎯 Processing category: CONSTRUCCION
+2025-08-17 15:21:40.068 | INFO     | __main__:demo_complete_rebranding:109 - --------------------------------------------------
+2025-08-17 15:21:47.350 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/construccion/kit_constructor_robótica_básica.jpg
+2025-08-17 15:21:47.350 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/construccion/20250817_152147/RoboCreativo__Kit_de_Iniciació.jpg
+2025-08-17 15:21:48.947 | SUCCESS  | __main__:demo_complete_rebranding:131 - ✅ Construccion: 2 toys processed
+2025-08-17 15:21:48.948 | INFO     | __main__:demo_complete_rebranding:134 -   1. ConstruMágico: Set Deluxe de 150 Piezas
+2025-08-17 15:21:48.948 | INFO     | __main__:demo_complete_rebranding:135 -      Original: Mega Set Bloques Magnéticos 150 Piezas
+2025-08-17 15:21:48.948 | INFO     | __main__:demo_complete_rebranding:136 -      Price: ₡19,200 → ₡32,191
+2025-08-17 15:21:48.948 | INFO     | __main__:demo_complete_rebranding:137 -      Profit: ₡12,987 (40.3%)
+2025-08-17 15:21:48.948 | INFO     | __main__:demo_complete_rebranding:141 -      Features: 4 destacadas
+2025-08-17 15:21:48.949 | INFO     | __main__:demo_complete_rebranding:146 - 
+2025-08-17 15:21:48.949 | INFO     | __main__:demo_complete_rebranding:134 -   2. RoboCreativo: Kit de Iniciación
+2025-08-17 15:21:48.949 | INFO     | __main__:demo_complete_rebranding:135 -      Original: Kit Constructor Robótica Básica
+2025-08-17 15:21:48.949 | INFO     | __main__:demo_complete_rebranding:136 -      Price: ₡35,000 → ₡60,198
+2025-08-17 15:21:48.949 | INFO     | __main__:demo_complete_rebranding:137 -      Profit: ₡25,193 (41.9%)
+2025-08-17 15:21:48.949 | INFO     | __main__:demo_complete_rebranding:141 -      Features: 4 destacadas
+2025-08-17 15:21:48.949 | INFO     | __main__:demo_complete_rebranding:145 -      🖼️  Image: ✅ Processed
+2025-08-17 15:21:48.950 | INFO     | __main__:demo_complete_rebranding:146 - 
+2025-08-17 15:21:48.950 | INFO     | __main__:demo_complete_rebranding:148 - 📊 Category Summary - Construccion:
+2025-08-17 15:21:48.950 | INFO     | __main__:demo_complete_rebranding:149 -    💰 Revenue: ₡92,388.67
+2025-08-17 15:21:48.950 | INFO     | __main__:demo_complete_rebranding:150 -    📈 Profit: ₡38,188.67 (41.3%)
+2025-08-17 15:21:48.950 | INFO     | __main__:demo_complete_rebranding:108 - 
+🎯 Processing category: VEHICULOS
+2025-08-17 15:21:48.950 | INFO     | __main__:demo_complete_rebranding:109 - --------------------------------------------------
+2025-08-17 15:21:53.460 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/vehiculos/drone_cámara_hd_para_niños_control_remoto.jpg
+2025-08-17 15:21:53.460 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/vehiculos/20250817_152153/AeroVisión_Júnior__Drone_HD.jpg
+2025-08-17 15:21:54.462 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/vehiculos/carro_eléctrico_montable_12v_con_mp3.jpg
+2025-08-17 15:21:54.462 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/vehiculos/20250817_152154/AutoSueño_MP3_12V___Aventura_E.jpg
+2025-08-17 15:21:54.463 | SUCCESS  | __main__:demo_complete_rebranding:131 - ✅ Vehiculos: 2 toys processed
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:134 -   1. AeroVisión Júnior: Drone HD
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:135 -      Original: Drone Cámara HD para Niños Control Remoto
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:136 -      Price: ₡42,000 → ₡72,646
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:137 -      Profit: ₡30,641 (42.2%)
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:141 -      Features: 5 destacadas
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:145 -      🖼️  Image: ✅ Processed
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:146 - 
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:134 -   2. AutoSueño MP3 12V - Aventura Eléctrica
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:135 -      Original: Carro Eléctrico Montable 12V con MP3
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:136 -      Price: ₡125,000 → ₡195,491
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:137 -      Profit: ₡70,487 (36.1%)
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:141 -      Features: 5 destacadas
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:145 -      🖼️  Image: ✅ Processed
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:146 - 
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:148 - 📊 Category Summary - Vehiculos:
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:149 -    💰 Revenue: ₡268,137.38
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:150 -    📈 Profit: ₡101,137.38 (37.7%)
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:108 - 
+🎯 Processing category: CREATIVIDAD
+2025-08-17 15:21:54.463 | INFO     | __main__:demo_complete_rebranding:109 - --------------------------------------------------
+2025-08-17 15:21:59.706 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/creatividad/set_completo_arte_y_manualidades_120_piezas.jpg
+2025-08-17 15:21:59.706 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/creatividad/20250817_152159/ArteMaestro_Deluxe_120.jpg
+2025-08-17 15:22:02.191 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/creatividad/mesa_luz_dibujo_profesional_a3_led.jpg
+2025-08-17 15:22:02.191 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/creatividad/20250817_152202/LuzArte_A3___Estudio_Creativo_.jpg
+2025-08-17 15:22:02.192 | SUCCESS  | __main__:demo_complete_rebranding:131 - ✅ Creatividad: 2 toys processed
+2025-08-17 15:22:02.192 | INFO     | __main__:demo_complete_rebranding:134 -   1. ArteMaestro Deluxe 120
+2025-08-17 15:22:02.192 | INFO     | __main__:demo_complete_rebranding:135 -      Original: Set Completo Arte y Manualidades 120 Piezas
+2025-08-17 15:22:02.192 | INFO     | __main__:demo_complete_rebranding:136 -      Price: ₡16,800 → ₡25,856
+2025-08-17 15:22:02.192 | INFO     | __main__:demo_complete_rebranding:137 -      Profit: ₡9,051 (35.0%)
+2025-08-17 15:22:02.192 | INFO     | __main__:demo_complete_rebranding:141 -      Features: 3 destacadas
+2025-08-17 15:22:02.192 | INFO     | __main__:demo_complete_rebranding:145 -      🖼️  Image: ✅ Processed
+2025-08-17 15:22:02.192 | INFO     | __main__:demo_complete_rebranding:146 - 
+2025-08-17 15:22:02.193 | INFO     | __main__:demo_complete_rebranding:134 -   2. LuzArte A3 - Estudio Creativo LED
+2025-08-17 15:22:02.193 | INFO     | __main__:demo_complete_rebranding:135 -      Original: Mesa Luz Dibujo Profesional A3 LED
+2025-08-17 15:22:02.193 | INFO     | __main__:demo_complete_rebranding:136 -      Price: ₡28,900 → ₡48,224
+2025-08-17 15:22:02.193 | INFO     | __main__:demo_complete_rebranding:137 -      Profit: ₡19,320 (40.1%)
+2025-08-17 15:22:02.193 | INFO     | __main__:demo_complete_rebranding:141 -      Features: 4 destacadas
+2025-08-17 15:22:02.193 | INFO     | __main__:demo_complete_rebranding:145 -      🖼️  Image: ✅ Processed
+2025-08-17 15:22:02.193 | INFO     | __main__:demo_complete_rebranding:146 - 
+2025-08-17 15:22:02.193 | INFO     | __main__:demo_complete_rebranding:148 - 📊 Category Summary - Creatividad:
+2025-08-17 15:22:02.193 | INFO     | __main__:demo_complete_rebranding:149 -    💰 Revenue: ₡74,079.95
+2025-08-17 15:22:02.193 | INFO     | __main__:demo_complete_rebranding:150 -    📈 Profit: ₡28,379.95 (38.3%)
+2025-08-17 15:22:02.193 | INFO     | __main__:demo_complete_rebranding:108 - 
+🎯 Processing category: DEPORTES
+2025-08-17 15:22:02.193 | INFO     | __main__:demo_complete_rebranding:109 - --------------------------------------------------
+2025-08-17 15:22:08.250 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/deportes/set_completo_tenis_mesa_portátil.jpg
+2025-08-17 15:22:08.250 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/deportes/20250817_152208/RaquetaFácil_Tenis_de_Mesa_Móv.jpg
+2025-08-17 15:22:08.551 | INFO     | integrations.product_rebrander:process_product_image:220 - ✅ Created and cached branded image: /Users/jcubero/Documents/Shaimee/image_cache/deportes/canasta_baloncesto_ajustable_1_2m_2_1m.jpg
+2025-08-17 15:22:08.552 | INFO     | integrations.product_rebrander:process_product_image:221 - 📁 Also saved to: /Users/jcubero/Documents/Shaimee/processed_images/deportes/20250817_152208/AlturaBasket_ProFlex.jpg
+2025-08-17 15:22:08.552 | SUCCESS  | __main__:demo_complete_rebranding:131 - ✅ Deportes: 2 toys processed
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:134 -   1. AlturaBasket ProFlex
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:135 -      Original: Canasta Baloncesto Ajustable 1.2m-2.1m
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:136 -      Price: ₡18,500 → ₡30,938
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:137 -      Profit: ₡12,433 (40.2%)
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:141 -      Features: 4 destacadas
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:145 -      🖼️  Image: ✅ Processed
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:146 - 
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:134 -   2. RaquetaFácil Tenis de Mesa Móvil
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:135 -      Original: Set Completo Tenis Mesa Portátil
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:136 -      Price: ₡24,000 → ₡41,285
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:137 -      Profit: ₡17,280 (41.9%)
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:141 -      Features: 4 destacadas
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:145 -      🖼️  Image: ✅ Processed
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:146 - 
+2025-08-17 15:22:08.553 | INFO     | __main__:demo_complete_rebranding:148 - 📊 Category Summary - Deportes:
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:149 -    💰 Revenue: ₡72,222.39
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:150 -    📈 Profit: ₡29,722.39 (41.2%)
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:156 - 
+======================================================================
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:157 - 📊 SHAYMEE TOY BUSINESS ANALYSIS
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:158 - ======================================================================
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:166 - 🧸 Total Products: 10
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:167 - 📂 Categories: 5
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:168 - 💸 Total Investment: ₡360,650.00
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:169 - 💰 Total Revenue: ₡591,503.68
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:170 - 📈 Total Profit: ₡230,853.68
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:171 - 🎯 Average Margin: 39.0%
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:173 - 
+📈 CATEGORY PERFORMANCE:
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:175 -   🎪 Educativo    |  2 toys | ₡ 33,425 profit |  39.5% margin
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:175 -   🎪 Construccion |  2 toys | ₡ 38,189 profit |  41.3% margin
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:175 -   🎪 Vehiculos    |  2 toys | ₡101,137 profit |  37.7% margin
+2025-08-17 15:22:08.554 | INFO     | __main__:demo_complete_rebranding:175 -   🎪 Creatividad  |  2 toys | ₡ 28,380 profit |  38.3% margin
+2025-08-17 15:22:08.555 | INFO     | __main__:demo_complete_rebranding:175 -   🎪 Deportes     |  2 toys | ₡ 29,722 profit |  41.2% margin
+2025-08-17 15:22:08.555 | INFO     | __main__:demo_complete_rebranding:184 - 
+🏆 Best Category: Construccion (41.3% margin)
+2025-08-17 15:22:08.555 | INFO     | __main__:demo_complete_rebranding:185 - 📉 Focus Area: Vehiculos (37.7% margin)
+2025-08-17 15:22:08.555 | INFO     | __main__:demo_complete_rebranding:188 - 
+📁 FOLDER STRUCTURE:
+2025-08-17 15:22:08.555 | INFO     | __main__:demo_complete_rebranding:195 -   📂 educativo: 1 processing batches
+2025-08-17 15:22:08.555 | INFO     | __main__:demo_complete_rebranding:199 -   🗂️  educativo: 2 cached images
+2025-08-17 15:22:08.555 | INFO     | __main__:demo_complete_rebranding:195 -   📂 construccion: 1 processing batches
+2025-08-17 15:22:08.555 | INFO     | __main__:demo_complete_rebranding:199 -   🗂️  construccion: 1 cached images
+2025-08-17 15:22:08.555 | INFO     | __main__:demo_complete_rebranding:195 -   📂 vehiculos: 2 processing batches
+2025-08-17 15:22:08.555 | INFO     | __main__:demo_complete_rebranding:199 -   🗂️  vehiculos: 2 cached images
+2025-08-17 15:22:08.556 | INFO     | __main__:demo_complete_rebranding:195 -   📂 creatividad: 2 processing batches
+2025-08-17 15:22:08.556 | INFO     | __main__:demo_complete_rebranding:199 -   🗂️  creatividad: 2 cached images
+2025-08-17 15:22:08.556 | INFO     | __main__:demo_complete_rebranding:195 -   📂 deportes: 1 processing batches
+2025-08-17 15:22:08.556 | INFO     | __main__:demo_complete_rebranding:199 -   🗂️  deportes: 2 cached images
+2025-08-17 15:22:08.556 | SUCCESS  | __main__:demo_complete_rebranding:201 - 
+🎉 DEMO COMPLETE! Shaymee processed 10 toys across 5 categories
+2025-08-17 15:22:08.556 | INFO     | __main__:demo_complete_rebranding:202 - 💡 Ready for WhatsApp integration and customer orders!

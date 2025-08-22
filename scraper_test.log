@@ -1,0 +1,345 @@
+2025-08-14 20:56:55.832 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-14 20:56:55.832 | CRITICAL | __main__:main:30 - Configuration error: Proxy credentials not fully set in environment variables.. Please check your .env file.
+2025-08-14 20:58:11.229 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-14 20:58:11.232 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-14 20:58:11.232 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-14 20:58:12.693 | INFO     | integrations.temu_client:get_products:36 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-14 20:58:12.831 | ERROR    | integrations.temu_client:get_products:87 - An unexpected error occurred: Page.goto: net::ERR_PROXY_CONNECTION_FAILED at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-14 20:58:12.884 | ERROR    | __main__:main:27 - Scraper failed and returned None. Check logs for exceptions.
+2025-08-17 13:23:09.211 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:23:09.211 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:23:09.211 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:23:12.242 | INFO     | integrations.temu_client:get_products:36 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:25:05.775 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:25:05.776 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:25:05.776 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:25:06.802 | INFO     | integrations.temu_client:get_products:36 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:25:37.092 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:25:37.092 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:25:37.092 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:25:38.149 | INFO     | integrations.temu_client:get_products:36 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:26:38.207 | ERROR    | integrations.temu_client:get_products:82 - Navigation or element search timed out after 60.0s.
+2025-08-17 13:26:38.376 | ERROR    | __main__:main:27 - Scraper failed and returned None. Check logs for exceptions.
+2025-08-17 13:26:58.735 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:26:58.735 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:26:58.735 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:27:00.031 | INFO     | integrations.temu_client:get_products:36 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:28:00.069 | ERROR    | integrations.temu_client:get_products:82 - Navigation or element search timed out after 60.0s.
+2025-08-17 13:28:00.070 | INFO     | integrations.temu_client:get_products:86 - Saving debug screenshot to 'debug_screenshot.png'
+2025-08-17 13:28:30.331 | ERROR    | __main__:main:32 - An unexpected error occurred during the test run: Page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+Traceback (most recent call last):
+
+  File "/Users/jcubero/Documents/Shaimee/test_scraper.py", line 36, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x1010823e0>
+    │       └ <function run at 0x1010d2ca0>
+    └ <module 'asyncio' from '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/__init__.py'>
+
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x101b4c700>
+           │      └ <function Runner.run at 0x10178ac00>
+           └ <asyncio.runners.Runner object at 0x101683fe0>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at /Users/jcubero/Documents/Shaimee/test_scraper.py:32> cb=[_run_until_compl...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x1017887c0>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x101683fe0>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 674, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x101788720>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 641, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x10178a520>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 1986, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x1015e3f60>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+> File "/Users/jcubero/Documents/Shaimee/test_scraper.py", line 16, in main
+    products = await client.get_products(search_term, limit=10)
+                     │      │            └ 'wireless headphones'
+                     │      └ <function TemuClient.get_products at 0x101b16d40>
+                     └ <integrations.temu_client.TemuClient object at 0x101c7c5f0>
+
+  File "/Users/jcubero/Documents/Shaimee/integrations/temu_client.py", line 87, in get_products
+    await page.screenshot(path=screenshot_path, full_page=True)
+          │    │               └ 'debug_screenshot.png'
+          │    └ <function Page.screenshot at 0x101ddccc0>
+          └ <Page url='https://www.temu.com/search_result.html?search_key=wireless%20headphones'>
+
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 9739, in screenshot
+    await self._impl_obj.screenshot(
+          │    │         └ <function Page.screenshot at 0x101d80040>
+          │    └ <Page url='https://www.temu.com/search_result.html?search_key=wireless%20headphones'>
+          └ <Page url='https://www.temu.com/search_result.html?search_key=wireless%20headphones'>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/playwright/_impl/_page.py", line 816, in screenshot
+    encoded_binary = await self._channel.send(
+                           │    │        └ <function Channel.send at 0x101ba1d00>
+                           │    └ <playwright._impl._connection.Channel object at 0x101e03650>
+                           └ <Page url='https://www.temu.com/search_result.html?search_key=wireless%20headphones'>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+                 │    │           └ <function Connection.wrap_api_call at 0x101c68180>
+                 │    └ <playwright._impl._connection.Connection object at 0x101c37ce0>
+                 └ <playwright._impl._connection.Channel object at 0x101e03650>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+          │                       └ {'frames': [{'file': '/Users/jcubero/Documents/Shaimee/integrations/temu_client.py', 'line': 87, 'column': 0, 'function': 'Te...
+          └ <function rewrite_error at 0x101b17380>
+
+playwright._impl._errors.TimeoutError: Page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+2025-08-17 13:28:55.859 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:28:55.860 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:28:55.860 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:29:01.958 | INFO     | integrations.temu_client:get_products:37 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:29:02.276 | ERROR    | integrations.temu_client:get_products:102 - An unexpected error occurred: Page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-17 13:29:02.530 | ERROR    | __main__:main:27 - Scraper failed and returned None. Check logs for exceptions.
+2025-08-17 13:32:49.422 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:32:49.422 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:32:49.422 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:32:52.142 | INFO     | integrations.temu_client:get_products:37 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:32:52.446 | ERROR    | integrations.temu_client:get_products:102 - An unexpected error occurred: Page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-17 13:32:52.630 | ERROR    | __main__:main:27 - Scraper failed and returned None. Check logs for exceptions.
+2025-08-17 13:37:39.175 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:37:39.175 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:37:39.175 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:37:42.544 | INFO     | integrations.temu_client:get_products:37 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:37:42.902 | ERROR    | integrations.temu_client:get_products:102 - An unexpected error occurred: Page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-17 13:37:43.145 | ERROR    | __main__:main:27 - Scraper failed and returned None. Check logs for exceptions.
+2025-08-17 13:38:54.729 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:38:54.730 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:38:54.730 | INFO     | integrations.temu_client:get_products:23 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:38:56.007 | INFO     | integrations.temu_client:get_products:40 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:39:56.020 | ERROR    | integrations.temu_client:get_products:86 - Navigation or element search timed out after 60.0s.
+2025-08-17 13:39:56.023 | INFO     | integrations.temu_client:get_products:90 - Saving debug screenshot to 'debug_screenshot.png'
+2025-08-17 13:40:26.107 | ERROR    | __main__:main:32 - An unexpected error occurred during the test run: Page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+Traceback (most recent call last):
+
+  File "/Users/jcubero/Documents/Shaimee/test_scraper.py", line 36, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x10468e3e0>
+    │       └ <function run at 0x10501eca0>
+    └ <module 'asyncio' from '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/__init__.py'>
+
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x106a2c700>
+           │      └ <function Runner.run at 0x10559ac00>
+           └ <asyncio.runners.Runner object at 0x105493ef0>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at /Users/jcubero/Documents/Shaimee/test_scraper.py:32> cb=[_run_until_compl...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x1055987c0>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x105493ef0>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 674, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x105598720>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 641, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x10559a520>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 1986, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x1053f3f60>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+> File "/Users/jcubero/Documents/Shaimee/test_scraper.py", line 16, in main
+    products = await client.get_products(search_term, limit=10)
+                     │      │            └ 'wireless headphones'
+                     │      └ <function TemuClient.get_products at 0x1069f6de0>
+                     └ <integrations.temu_client.TemuClient object at 0x106acd520>
+
+  File "/Users/jcubero/Documents/Shaimee/integrations/temu_client.py", line 91, in get_products
+    await page.screenshot(path=screenshot_path, full_page=True)
+          │    │               └ 'debug_screenshot.png'
+          │    └ <function Page.screenshot at 0x106d80d60>
+          └ <Page url='https://www.temu.com/search_result.html?search_key=wireless%20headphones'>
+
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 9739, in screenshot
+    await self._impl_obj.screenshot(
+          │    │         └ <function Page.screenshot at 0x106d240e0>
+          │    └ <Page url='https://www.temu.com/search_result.html?search_key=wireless%20headphones'>
+          └ <Page url='https://www.temu.com/search_result.html?search_key=wireless%20headphones'>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/playwright/_impl/_page.py", line 816, in screenshot
+    encoded_binary = await self._channel.send(
+                           │    │        └ <function Channel.send at 0x106a7dda0>
+                           │    └ <playwright._impl._connection.Channel object at 0x106da7560>
+                           └ <Page url='https://www.temu.com/search_result.html?search_key=wireless%20headphones'>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+                 │    │           └ <function Connection.wrap_api_call at 0x106afc220>
+                 │    └ <playwright._impl._connection.Connection object at 0x1053e2ae0>
+                 └ <playwright._impl._connection.Channel object at 0x106da7560>
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+          │                       └ {'frames': [{'file': '/Users/jcubero/Documents/Shaimee/integrations/temu_client.py', 'line': 91, 'column': 0, 'function': 'Te...
+          └ <function rewrite_error at 0x1069f7420>
+
+playwright._impl._errors.TimeoutError: Page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+2025-08-17 13:41:28.857 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:41:28.858 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:41:28.858 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:41:29.961 | ERROR    | integrations.temu_client:get_products:93 - An unexpected error occurred: 'module' object is not callable
+2025-08-17 13:41:29.992 | ERROR    | __main__:main:27 - Scraper failed and returned None. Check logs for exceptions.
+2025-08-17 13:41:49.057 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:41:49.057 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:41:49.057 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:41:50.212 | ERROR    | integrations.temu_client:get_products:93 - An unexpected error occurred: module 'playwright_stealth' has no attribute 'stealth_async'
+2025-08-17 13:41:50.264 | ERROR    | __main__:main:27 - Scraper failed and returned None. Check logs for exceptions.
+2025-08-17 13:43:51.266 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:43:51.267 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:43:51.267 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:43:52.477 | INFO     | integrations.temu_client:get_products:43 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:44:52.484 | ERROR    | integrations.temu_client:get_products:89 - Navigation or element search timed out after 60.0s. Temu may be blocking the request.
+2025-08-17 13:44:52.542 | ERROR    | __main__:main:27 - Scraper failed and returned None. Check logs for exceptions.
+2025-08-17 13:45:19.904 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:45:19.904 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:45:19.904 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:45:21.078 | INFO     | integrations.temu_client:get_products:45 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:46:51.127 | ERROR    | integrations.temu_client:get_products:91 - Navigation or element search timed out after 90.0s. Temu may be blocking the request.
+2025-08-17 13:46:51.130 | INFO     | integrations.temu_client:get_products:95 - Saving debug screenshot to 'debug_screenshot.png'
+2025-08-17 13:47:21.152 | ERROR    | integrations.temu_client:get_products:98 - Could not take screenshot: Page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+2025-08-17 13:47:21.318 | ERROR    | __main__:main:27 - Scraper failed and returned None. Check logs for exceptions.
+2025-08-17 13:49:15.095 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:49:15.096 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:49:15.104 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:49:18.109 | INFO     | integrations.temu_client:get_products:45 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:49:19.642 | ERROR    | integrations.temu_client:get_products:103 - An unexpected error occurred: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-17 13:49:19.874 | ERROR    | __main__:main:27 - Scraper failed and returned None. Check logs for exceptions.
+2025-08-17 13:50:19.640 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:50:19.640 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:50:19.640 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:50:19.641 | INFO     | integrations.temu_client:get_products:29 - Scraper attempt 1 of 5...
+2025-08-17 13:50:22.895 | INFO     | integrations.temu_client:get_products:47 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:50:24.419 | ERROR    | integrations.temu_client:get_products:97 - An unexpected error occurred on attempt 1: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-17 13:50:24.746 | WARNING  | integrations.temu_client:get_products:102 - Attempt 1 failed. Retrying with a new proxy IP...
+2025-08-17 13:50:24.746 | INFO     | integrations.temu_client:get_products:29 - Scraper attempt 2 of 5...
+2025-08-17 13:50:25.765 | INFO     | integrations.temu_client:get_products:47 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:50:27.311 | ERROR    | integrations.temu_client:get_products:97 - An unexpected error occurred on attempt 2: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-17 13:50:27.461 | WARNING  | integrations.temu_client:get_products:102 - Attempt 2 failed. Retrying with a new proxy IP...
+2025-08-17 13:50:27.461 | INFO     | integrations.temu_client:get_products:29 - Scraper attempt 3 of 5...
+2025-08-17 13:50:28.396 | INFO     | integrations.temu_client:get_products:47 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:50:29.924 | ERROR    | integrations.temu_client:get_products:97 - An unexpected error occurred on attempt 3: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-17 13:50:30.164 | WARNING  | integrations.temu_client:get_products:102 - Attempt 3 failed. Retrying with a new proxy IP...
+2025-08-17 13:50:30.165 | INFO     | integrations.temu_client:get_products:29 - Scraper attempt 4 of 5...
+2025-08-17 13:50:31.221 | INFO     | integrations.temu_client:get_products:47 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:50:32.720 | ERROR    | integrations.temu_client:get_products:97 - An unexpected error occurred on attempt 4: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-17 13:50:33.550 | WARNING  | integrations.temu_client:get_products:102 - Attempt 4 failed. Retrying with a new proxy IP...
+2025-08-17 13:50:33.550 | INFO     | integrations.temu_client:get_products:29 - Scraper attempt 5 of 5...
+2025-08-17 13:50:34.775 | INFO     | integrations.temu_client:get_products:47 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:50:36.319 | ERROR    | integrations.temu_client:get_products:97 - An unexpected error occurred on attempt 5: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-17 13:50:36.471 | WARNING  | integrations.temu_client:get_products:102 - Attempt 5 failed. Retrying with a new proxy IP...
+2025-08-17 13:50:36.471 | ERROR    | integrations.temu_client:get_products:104 - Scraper failed after all retry attempts.
+2025-08-17 13:50:36.471 | ERROR    | __main__:main:27 - Scraper failed and returned None. Check logs for exceptions.
+2025-08-17 13:56:30.606 | INFO     | __main__:main:8 - Initializing Temu Client for testing...
+2025-08-17 13:56:30.607 | INFO     | __main__:main:14 - Attempting to scrape products for search term: 'wireless headphones'
+2025-08-17 13:56:30.607 | INFO     | integrations.temu_client:get_products:24 - Starting Playwright scraper for search term: 'wireless headphones'
+2025-08-17 13:56:30.607 | INFO     | integrations.temu_client:get_products:29 - Scraper attempt 1 of 5...
+2025-08-17 13:56:33.293 | INFO     | integrations.temu_client:get_products:47 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:56:34.861 | ERROR    | integrations.temu_client:get_products:97 - An unexpected error occurred on attempt 1: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-17 13:56:35.249 | WARNING  | integrations.temu_client:get_products:102 - Attempt 1 failed. Retrying with a new proxy IP...
+2025-08-17 13:56:35.249 | INFO     | integrations.temu_client:get_products:29 - Scraper attempt 2 of 5...
+2025-08-17 13:56:36.315 | INFO     | integrations.temu_client:get_products:47 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:56:37.835 | ERROR    | integrations.temu_client:get_products:97 - An unexpected error occurred on attempt 2: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-17 13:56:37.975 | WARNING  | integrations.temu_client:get_products:102 - Attempt 2 failed. Retrying with a new proxy IP...
+2025-08-17 13:56:37.975 | INFO     | integrations.temu_client:get_products:29 - Scraper attempt 3 of 5...
+2025-08-17 13:56:38.850 | INFO     | integrations.temu_client:get_products:47 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:56:40.376 | ERROR    | integrations.temu_client:get_products:97 - An unexpected error occurred on attempt 3: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-17 13:56:40.592 | WARNING  | integrations.temu_client:get_products:102 - Attempt 3 failed. Retrying with a new proxy IP...
+2025-08-17 13:56:40.592 | INFO     | integrations.temu_client:get_products:29 - Scraper attempt 4 of 5...
+2025-08-17 13:56:41.568 | INFO     | integrations.temu_client:get_products:47 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:56:43.162 | ERROR    | integrations.temu_client:get_products:97 - An unexpected error occurred on attempt 4: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-17 13:56:43.299 | WARNING  | integrations.temu_client:get_products:102 - Attempt 4 failed. Retrying with a new proxy IP...
+2025-08-17 13:56:43.299 | INFO     | integrations.temu_client:get_products:29 - Scraper attempt 5 of 5...
+2025-08-17 13:56:44.163 | INFO     | integrations.temu_client:get_products:47 - Navigating to: https://www.temu.com/search_result.html?search_key=wireless%20headphones
+2025-08-17 13:56:45.686 | ERROR    | integrations.temu_client:get_products:97 - An unexpected error occurred on attempt 5: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.temu.com/search_result.html?search_key=wireless%20headphones
+Call log:
+  - navigating to "https://www.temu.com/search_result.html?search_key=wireless%20headphones", waiting until "load"
+
+2025-08-17 13:56:45.834 | WARNING  | integrations.temu_client:get_products:102 - Attempt 5 failed. Retrying with a new proxy IP...
+2025-08-17 13:56:45.834 | ERROR    | integrations.temu_client:get_products:104 - Scraper failed after all retry attempts.
+2025-08-17 13:56:45.834 | ERROR    | __main__:main:27 - Scraper failed and returned None. Check logs for exceptions.
