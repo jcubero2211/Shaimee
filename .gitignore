@@ -135,6 +135,7 @@ uploads/
 *.jpg
 *.jpeg
 *.png
+!integrations/shaimee_smartwatch.png
 *.gif
 *.pdf
 *.doc

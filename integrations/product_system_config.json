@@ -1,0 +1,72 @@
+{
+  "sources": {
+    "pequeno_mundo": {
+      "name": "Pequeño Mundo",
+      "priority": 1,
+      "enabled": true,
+      "timeout": 30,
+      "max_retries": 3,
+      "confidence_multiplier": 1.0,
+      "base_url": "https://www.pequenomund.com"
+    },
+    "aliexpress": {
+      "name": "AliExpress",
+      "priority": 2,
+      "enabled": true,
+      "timeout": 45,
+      "max_retries": 2,
+      "confidence_multiplier": 0.8,
+      "base_url": "https://www.aliexpress.com"
+    },
+    "unimart": {
+      "name": "Unimart",
+      "priority": 1,
+      "enabled": true,
+      "timeout": 30,
+      "max_retries": 3,
+      "confidence_multiplier": 0.9,
+      "base_url": "https://www.unimart.com",
+      "note": "Costa Rican electronics retailer with local inventory"
+    },
+    "temu": {
+      "name": "Temu",
+      "priority": 3,
+      "enabled": false,
+      "timeout": 60,
+      "max_retries": 1,
+      "confidence_multiplier": 0.6,
+      "base_url": "https://www.temu.com",
+      "note": "Disabled due to complex CAPTCHA requirements"
+    },
+    "manual_fallback": {
+      "name": "Manual Fallback",
+      "priority": 99,
+      "enabled": true,
+      "timeout": 5,
+      "max_retries": 1,
+      "confidence_multiplier": 0.3,
+      "base_url": "internal"
+    }
+  },
+  "system_settings": {
+    "cache_ttl_seconds": 3600,
+    "max_products_per_source": 50,
+    "default_search_limit": 20,
+    "parallel_scraping": true,
+    "fallback_on_failure": true,
+    "min_confidence_score": 0.3,
+    "similarity_threshold": 0.7,
+    "request_delay_seconds": 1,
+    "user_agents": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15"
+    ]
+  },
+  "product_ranking": {
+    "title_match_weight": 0.4,
+    "price_availability_weight": 0.3,
+    "source_reliability_weight": 0.2,
+    "image_quality_weight": 0.1
+  }
+}

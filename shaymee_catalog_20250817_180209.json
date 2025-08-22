@@ -1,0 +1,199 @@
+{
+  "timestamp": "20250817_180209",
+  "products": [
+    {
+      "id": "001_juguete_mascota_camaleón",
+      "title": "Juguete mascota camaleón poliéster 25x6x16cm",
+      "price": "$35.63",
+      "original_price": "₡2 300,00",
+      "margin": "40",
+      "image_filename": "product_images/001_juguete_mascota_camaleón.jpg",
+      "productUrl": "https://tienda.pequenomundo.com/juguete-mascota-camaleon-poliester-25x6x16cm.html",
+      "description": "Juguete mascota camaleón poliéster 25x6x16cm - Calidad premium garantizada",
+      "category": "juguetes",
+      "source": "Pequeño Mundo",
+      "brand": "Shaymee",
+      "whatsapp_ready": true,
+      "features": [
+        "✓ Calidad premium",
+        "✓ Envío rápido y seguro",
+        "✓ Garantía de satisfacción"
+      ]
+    },
+    {
+      "id": "002_juguete_mascota_animales",
+      "title": "Juguete mascota animales termoplástico 22x18x8cm",
+      "price": "$52.23",
+      "original_price": "₡2 200,00",
+      "margin": "40",
+      "image_filename": "product_images/002_juguete_mascota_animales.jpg",
+      "productUrl": "https://tienda.pequenomundo.com/juguete-mascota-animales-termoplastico-22x18x8cm.html",
+      "description": "Juguete mascota animales termoplástico 22x18x8cm - Calidad premium garantizada",
+      "category": "juguetes",
+      "source": "Pequeño Mundo",
+      "brand": "Shaymee",
+      "whatsapp_ready": true,
+      "features": [
+        "✓ Calidad premium",
+        "✓ Envío rápido y seguro",
+        "✓ Garantía de satisfacción"
+      ]
+    },
+    {
+      "id": "003_juguete_mascota_robot",
+      "title": "Juguete mascota robot poliéster 21x22x7.5cm",
+      "price": "$73.02",
+      "original_price": "₡2 800,00",
+      "margin": "40",
+      "image_filename": "product_images/003_juguete_mascota_robot.jpg",
+      "productUrl": "https://tienda.pequenomundo.com/juguete-mascota-robot-poliester-21x22x7.5cm.html",
+      "description": "Juguete mascota robot poliéster 21x22x7.5cm - Calidad premium garantizada",
+      "category": "juguetes",
+      "source": "Pequeño Mundo",
+      "brand": "Shaymee",
+      "whatsapp_ready": true,
+      "features": [
+        "✓ Calidad premium",
+        "✓ Envío rápido y seguro",
+        "✓ Garantía de satisfacción"
+      ]
+    },
+    {
+      "id": "004_juguete_mascota_llanta",
+      "title": "Juguete mascota llanta 45x14x4cm",
+      "price": "$35.44",
+      "original_price": "₡1 200,00",
+      "margin": "40",
+      "image_filename": "product_images/004_juguete_mascota_llanta.jpg",
+      "productUrl": "https://tienda.pequenomundo.com/juguete-mascota-llanta.html",
+      "description": "Juguete mascota llanta 45x14x4cm - Calidad premium garantizada",
+      "category": "juguetes",
+      "source": "Pequeño Mundo",
+      "brand": "Shaymee",
+      "whatsapp_ready": true,
+      "features": [
+        "✓ Calidad premium",
+        "✓ Envío rápido y seguro",
+        "✓ Garantía de satisfacción"
+      ]
+    },
+    {
+      "id": "005_juguete_mascota_cuerda",
+      "title": "Juguete mascota cuerda y felpa 15x45cm",
+      "price": "$29.24",
+      "original_price": "₡3 600,00",
+      "margin": "40",
+      "image_filename": "product_images/005_juguete_mascota_cuerda.jpg",
+      "productUrl": "https://tienda.pequenomundo.com/juguete-mascota-15x45cm.html",
+      "description": "Juguete mascota cuerda y felpa 15x45cm - Calidad premium garantizada",
+      "category": "juguetes",
+      "source": "Pequeño Mundo",
+      "brand": "Shaymee",
+      "whatsapp_ready": true,
+      "features": [
+        "✓ Calidad premium",
+        "✓ Envío rápido y seguro",
+        "✓ Garantía de satisfacción"
+      ]
+    },
+    {
+      "id": "006_juguete_mascota_peluche",
+      "title": "Juguete mascota peluche poliéster 30x8.5x3cm",
+      "price": "$59.00",
+      "original_price": "₡2 200,00",
+      "margin": "40",
+      "image_filename": "product_images/006_juguete_mascota_peluche.jpg",
+      "productUrl": "https://tienda.pequenomundo.com/juguete-mascota-30x8-5x3cm.html",
+      "description": "Juguete mascota peluche poliéster 30x8.5x3cm - Calidad premium garantizada",
+      "category": "juguetes",
+      "source": "Pequeño Mundo",
+      "brand": "Shaymee",
+      "whatsapp_ready": true,
+      "features": [
+        "✓ Calidad premium",
+        "✓ Envío rápido y seguro",
+        "✓ Garantía de satisfacción"
+      ]
+    },
+    {
+      "id": "007_juguete_mascota_cuerda",
+      "title": "Juguete mascota cuerda animal poliéster 52x8x6cm",
+      "price": "$50.09",
+      "original_price": "₡2 000,00",
+      "margin": "40",
+      "image_filename": "product_images/007_juguete_mascota_cuerda.jpg",
+      "productUrl": "https://tienda.pequenomundo.com/juguete-mascota-cuerda-animal-poliester-52x8x6cm.html",
+      "description": "Juguete mascota cuerda animal poliéster 52x8x6cm - Calidad premium garantizada",
+      "category": "juguetes",
+      "source": "Pequeño Mundo",
+      "brand": "Shaymee",
+      "whatsapp_ready": true,
+      "features": [
+        "✓ Calidad premium",
+        "✓ Envío rápido y seguro",
+        "✓ Garantía de satisfacción"
+      ]
+    },
+    {
+      "id": "008_telescopio_juguete_plástico",
+      "title": "Telescopio juguete plástico 25.5x8.7x12.8cm",
+      "price": "$84.79",
+      "original_price": "₡1 900,00",
+      "margin": "40",
+      "image_filename": "product_images/008_telescopio_juguete_plástico.jpg",
+      "productUrl": "https://tienda.pequenomundo.com/telescopio-juguete.html",
+      "description": "Telescopio juguete plástico 25.5x8.7x12.8cm - Calidad premium garantizada",
+      "category": "juguetes",
+      "source": "Pequeño Mundo",
+      "brand": "Shaymee",
+      "whatsapp_ready": true,
+      "features": [
+        "✓ Calidad premium",
+        "✓ Envío rápido y seguro",
+        "✓ Garantía de satisfacción"
+      ]
+    },
+    {
+      "id": "009_juguete_mascota_peluche",
+      "title": "Juguete mascota peluche felpa 7x15cm",
+      "price": "$91.29",
+      "original_price": "₡1 300,00",
+      "margin": "40",
+      "image_filename": "product_images/009_juguete_mascota_peluche.jpg",
+      "productUrl": "https://tienda.pequenomundo.com/juguete-mascota-peluche-7x15cm.html",
+      "description": "Juguete mascota peluche felpa 7x15cm - Calidad premium garantizada",
+      "category": "juguetes",
+      "source": "Pequeño Mundo",
+      "brand": "Shaymee",
+      "whatsapp_ready": true,
+      "features": [
+        "✓ Calidad premium",
+        "✓ Envío rápido y seguro",
+        "✓ Garantía de satisfacción"
+      ]
+    },
+    {
+      "id": "010_juguete_mascota_cocodrilo",
+      "title": "Juguete mascota cocodrilo 54x20cm",
+      "price": "$58.10",
+      "original_price": "₡3 200,00",
+      "margin": "40",
+      "image_filename": "product_images/010_juguete_mascota_cocodrilo.jpg",
+      "productUrl": "https://tienda.pequenomundo.com/juguete-mascotas-cocodrilo-poliester.html",
+      "description": "Juguete mascota cocodrilo 54x20cm - Calidad premium garantizada",
+      "category": "juguetes",
+      "source": "Pequeño Mundo",
+      "brand": "Shaymee",
+      "whatsapp_ready": true,
+      "features": [
+        "✓ Calidad premium",
+        "✓ Envío rápido y seguro",
+        "✓ Garantía de satisfacción"
+      ]
+    }
+  ],
+  "categories": [
+    "juguetes"
+  ],
+  "total_products": 10
+}
